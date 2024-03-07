@@ -1,6 +1,6 @@
 'use client'
 
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle, css } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
   * {
@@ -8,15 +8,16 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
   }
-  html {
-    font-size: 62.5%;
-  }
-  html, body, #__next {
-    height: 100%;
-  }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
+
+  ${({ theme }) => css`
+    html {
+      font-size: 62.5%;
+    }
+
+    body {
+      font-size: ${theme.fonts.sizes.regular};
+    }
+  `}
 `
 
 export default GlobalStyles
