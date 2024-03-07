@@ -1,11 +1,7 @@
-import { render, screen, RenderResult } from '@testing-library/react'
-import { ThemeProvider } from 'styled-components'
+import { screen } from '@testing-library/react'
 
-import theme from '../../styles/theme'
+import { renderWithTheme } from '../../utils/test-utils'
 import SignInForm from '.'
-
-const renderWithTheme = (children: React.ReactNode): RenderResult =>
-  render(<ThemeProvider theme={theme}>{children}</ThemeProvider>)
 
 describe('<SignInForm />', () => {
   it('should render the form correctly', () => {

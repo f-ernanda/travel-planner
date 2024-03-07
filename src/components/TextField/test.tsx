@@ -1,12 +1,8 @@
-import { render, screen, RenderResult } from '@testing-library/react'
+import { screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-import { ThemeProvider } from 'styled-components'
 
-import theme from '../../styles/theme'
+import { renderWithTheme } from '../../utils/test-utils'
 import TextField from '.'
-
-const renderWithTheme = (children: React.ReactNode): RenderResult =>
-  render(<ThemeProvider theme={theme}>{children}</ThemeProvider>)
 
 describe('<TextField />', () => {
   it('should render the with label', () => {
