@@ -1,10 +1,15 @@
-import { render, screen } from '@testing-library/react'
+import { render, screen, RenderResult } from '@testing-library/react'
+import { ThemeProvider } from 'styled-components'
 
+import theme from '../../styles/theme'
 import SignInForm from '.'
+
+const renderWithTheme = (children: React.ReactNode): RenderResult =>
+  render(<ThemeProvider theme={theme}>{children}</ThemeProvider>)
 
 describe('<SignInForm />', () => {
   it('should render the form correctly', () => {
-    render(<SignInForm />)
+    renderWithTheme(<SignInForm />)
 
     expect(screen.getByPlaceholderText('Email')).toBeInTheDocument()
     expect(screen.getByPlaceholderText('Password')).toBeInTheDocument()

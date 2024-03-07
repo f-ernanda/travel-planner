@@ -1,5 +1,18 @@
 'use client'
 
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
-export const Wrapper = styled.main``
+import * as TextFieldStyles from '../TextField/styles'
+import * as ButtonStyles from '../Button/styles'
+
+export const Wrapper = styled.div`
+  ${({ theme }) => css`
+    ${TextFieldStyles.Wrapper} {
+      margin-block: ${theme.spacings.small};
+    }
+
+    ${ButtonStyles.Wrapper} {
+      margin-block: ${theme.spacings.regular};
+    }
+  `}
+`

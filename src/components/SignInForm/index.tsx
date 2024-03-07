@@ -6,8 +6,20 @@ import TextField from '../TextField'
 const SignInForm = () => (
   <Styled.Wrapper>
     <form>
-      <TextField name="Email" placeholder="Email" type="Email" />
-      <TextField name="Password" placeholder="Password" type="password" />
+      <TextField
+        label="Email"
+        labelFor="Email"
+        name="Email"
+        placeholder="Email"
+        type="Email"
+      />
+      <TextField
+        label="Password"
+        labelFor="Password"
+        name="Password"
+        placeholder="Password"
+        type="password"
+      />
       <Button>Sign In</Button>
     </form>
   </Styled.Wrapper>

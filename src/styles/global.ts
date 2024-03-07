@@ -17,6 +17,11 @@ const GlobalStyles = createGlobalStyle`
     body {
       font-size: ${theme.fonts.sizes.regular};
     }
+
+    button,
+    input {
+      font-family: inherit;
+    }
   `}
 `
 

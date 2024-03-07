@@ -25,9 +25,9 @@ export default {
   },
 
   spacings: {
-    small: '2.4rem',
+    small: '0.8rem',
     regular: '3.2rem',
-    large: '4.0rem'
+    large: '4.8rem'
   },
 
   borders: {

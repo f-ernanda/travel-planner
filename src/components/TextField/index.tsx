@@ -11,7 +11,9 @@ const TextField = ({ label, labelFor = '', ...props }: TextFieldProps) => {
   return (
     <Styled.Wrapper>
       {label && <Styled.Label htmlFor={labelFor}>{label}</Styled.Label>}
-      <Styled.Input type="text" {...props}></Styled.Input>
+      <Styled.InputWrapper>
+        <Styled.Input type="text" {...props}></Styled.Input>
+      </Styled.InputWrapper>
     </Styled.Wrapper>
   )
 }

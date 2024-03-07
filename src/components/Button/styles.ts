@@ -1,12 +1,14 @@
 'use client'
 
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const Wrapper = styled.button`
-  background: blue;
-  border: 0;
-  border-radius: 0.4rem;
-  color: white;
-  height: 4rem;
-  padding: 0.8rem;
+  ${({ theme }) => css`
+    background: ${theme.colors.primary};
+    border: 0;
+    border-radius: ${theme.borders.radius};
+    color: ${theme.colors.white};
+    font-size: ${theme.fonts.sizes.small};
+    padding: ${theme.spacings.small} ${theme.spacings.regular};
+  `}
 `

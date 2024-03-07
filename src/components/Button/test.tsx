@@ -1,15 +1,21 @@
-import { render, screen } from '@testing-library/react'
+import { render, screen, RenderResult } from '@testing-library/react'
+import { ThemeProvider } from 'styled-components'
+
+import theme from '../../styles/theme'
 
 import Button from '.'
 
+const renderWithTheme = (children: React.ReactNode): RenderResult =>
+  render(<ThemeProvider theme={theme}>{children}</ThemeProvider>)
+
 describe('<Button />', () => {
   it('should render the styled button', () => {
-    render(<Button>View details</Button>)
+    renderWithTheme(<Button>View details</Button>)
 
     expect(screen.getByRole('button', { name: /View details/i })).toHaveStyle({
-      border: '0',
-      height: '4rem',
-      padding: '0.8rem'
+      background: '#0D8C84',
+      borderRadius: '0.4rem',
+      padding: '0.8rem 3.2rem'
     })
   })
 })

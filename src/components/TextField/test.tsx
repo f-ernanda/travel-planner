@@ -1,17 +1,22 @@
-import { render, screen } from '@testing-library/react'
+import { render, screen, RenderResult } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
+import { ThemeProvider } from 'styled-components'
 
+import theme from '../../styles/theme'
 import TextField from '.'
+
+const renderWithTheme = (children: React.ReactNode): RenderResult =>
+  render(<ThemeProvider theme={theme}>{children}</ThemeProvider>)
 
 describe('<TextField />', () => {
   it('should render the with label', () => {
-    render(<TextField label="Email" labelFor="Email" id="Email" />)
+    renderWithTheme(<TextField label="Email" labelFor="Email" id="Email" />)
 
     expect(screen.getByLabelText('Email')).toBeInTheDocument()
   })
 
   it('should render with placeholder', () => {
-    render(<TextField placeholder="john.smith@email.com" />)
+    renderWithTheme(<TextField placeholder="john.smith@email.com" />)
 
     expect(
       screen.getByPlaceholderText('john.smith@email.com')
@@ -19,7 +24,7 @@ describe('<TextField />', () => {
   })
 
   it('should be accessible by tab', async () => {
-    render(<TextField label="Email" labelFor="Email" id="Email" />)
+    renderWithTheme(<TextField label="Email" labelFor="Email" id="Email" />)
 
     expect(document.body).toHaveFocus()
 
