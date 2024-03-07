@@ -6,6 +6,7 @@ module.exports = {
     '!src/lib/registry.tsx',
     '!src/types/**',
     '!src/styles/**',
+    '!src/pages/**/*.tsx',
     '!src/**/stories.tsx'
   ],
   modulePaths: ['<rootDir>/src/'],
