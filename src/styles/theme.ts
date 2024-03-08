@@ -30,6 +30,12 @@ export default {
     large: '4.8rem'
   },
 
+  thickness: {
+    thin: '0.4rem',
+    regular: '3.2rem',
+    thick: '4.8rem'
+  },
+
   borders: {
     radius: '0.4rem'
   },
