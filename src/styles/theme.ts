@@ -9,9 +9,11 @@ export default {
     regular: 400,
     bold: 700,
     sizes: {
+      tiny: '1.2rem',
       small: '1.4rem',
       regular: '1.6rem',
-      large: '2.0rem'
+      large: '2.4rem',
+      huge: '3.4rem'
     }
   },
 
@@ -25,15 +27,17 @@ export default {
   },
 
   spacings: {
-    small: '0.8rem',
+    tiny: '0.8rem',
+    small: '1.6rem',
     regular: '3.2rem',
-    large: '4.8rem'
+    large: '4.8rem',
+    huge: '5.6rem'
   },
 
   thickness: {
     thin: '0.4rem',
-    regular: '3.2rem',
-    thick: '4.8rem'
+    regular: '0.8rem',
+    thick: '1.2rem'
   },
 
   borders: {

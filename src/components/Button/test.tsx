@@ -4,7 +4,7 @@ import { renderWithTheme } from '../../utils/test-utils'
 import Button from '.'
 
 describe('<Button />', () => {
-  it('should render the styled button', () => {
+  it('should render the styled button by default', () => {
     renderWithTheme(<Button>View details</Button>)
 
     expect(screen.getByRole('button', { name: /View details/i })).toHaveStyle({
@@ -13,7 +13,7 @@ describe('<Button />', () => {
     })
   })
 
-  it('should render the full width button', () => {
+  it('should render the full width button when prop is set', () => {
     renderWithTheme(<Button $fullWidth>View details</Button>)
 
     expect(screen.getByRole('button', { name: /View details/i })).toHaveStyle({

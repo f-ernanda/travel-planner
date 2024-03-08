@@ -1,11 +1,11 @@
 import * as Styled from './styles'
 
 export type LogoProps = {
-  size?: 'normal' | 'large'
+  $size?: 'normal' | 'large'
 }
 
-const Logo = ({ size = 'normal' }: LogoProps) => (
-  <Styled.Wrapper size={size}>
+const Logo = ({ $size = 'normal' }: LogoProps) => (
+  <Styled.Wrapper $size={$size}>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"

@@ -7,19 +7,24 @@ import { LogoProps } from '.'
 
 const wrapperModifiers = {
   normal: () => css`
-    width: 10rem;
+    width: 8rem;
+
+    ${media.greaterThan('medium')`
+      width: 10rem;
+    `}
   `,
 
   large: () => css`
-    width: 20rem;
+    width: 12rem;
+
+    ${media.greaterThan('medium')`
+      width: 20rem;
+    `}
   `
 }
 
 export const Wrapper = styled.div<LogoProps>`
-  ${({ size }) => css`
-    ${size && wrapperModifiers[size]}
-    ${media.lessThan('medium')`
-      width: 8rem;
-    `}
+  ${({ $size }) => css`
+    ${$size && wrapperModifiers[$size]}
   `}
 `
