@@ -19,7 +19,8 @@
     "next": "14.1.2",
     "react": "^18",
     "react-dom": "^18",
-    "styled-components": "^6.1.8"
+    "styled-components": "^6.1.8",
+    "styled-media-query": "^2.1.2"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.6.17",
