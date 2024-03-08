@@ -9,8 +9,15 @@ describe('<Button />', () => {
 
     expect(screen.getByRole('button', { name: /View details/i })).toHaveStyle({
       background: '#0D8C84',
-      borderRadius: '0.4rem',
-      padding: '0.8rem 3.2rem'
+      color: '#DAE4E4'
+    })
+  })
+
+  it('should render the full width button', () => {
+    renderWithTheme(<Button $fullWidth>View details</Button>)
+
+    expect(screen.getByRole('button', { name: /View details/i })).toHaveStyle({
+      width: '100%'
     })
   })
 })
