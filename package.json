@@ -16,6 +16,7 @@
     "generate": "npx plop --plopfile generators/plopfile.js"
   },
   "dependencies": {
+    "@styled-icons/material-rounded": "^10.47.0",
     "next": "14.1.2",
     "react": "^18",
     "react-dom": "^18",

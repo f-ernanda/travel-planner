@@ -1,6 +1,6 @@
 import { screen } from '@testing-library/react'
 
-import { renderWithTheme } from '../../utils/test-utils'
+import { renderWithTheme } from '@/utils/test-utils'
 import SignInForm from '.'
 
 describe('<SignInForm />', () => {

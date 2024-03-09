@@ -1,7 +1,7 @@
 import { screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 
-import { renderWithTheme } from '../../utils/test-utils'
+import { renderWithTheme } from '@/utils/test-utils'
 import TextField from '.'
 
 describe('<TextField />', () => {
@@ -22,11 +22,11 @@ describe('<TextField />', () => {
   it('should be accessible by tab', async () => {
     renderWithTheme(<TextField label="Email" labelFor="Email" id="Email" />)
 
+    const user = userEvent.setup()
+
     expect(document.body).toHaveFocus()
 
-    const user = userEvent.setup()
     await user.tab()
-
     expect(screen.getByLabelText('Email')).toHaveFocus()
   })
 })
