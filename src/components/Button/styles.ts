@@ -20,6 +20,10 @@ export const Wrapper = styled.button<ButtonProps>`
     font-size: ${theme.fonts.sizes.regular};
     padding: ${theme.spacings.tiny} ${theme.spacings.small};
 
+    &:hover {
+      background: ${theme.colors.primary}CC;
+    }
+
     ${$fullWidth && wrapperModifiers.fullWidth}
   `}
 `
