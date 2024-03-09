@@ -1,5 +1,4 @@
 import { screen } from '@testing-library/react'
-import 'jest-styled-components'
 
 import { renderWithTheme } from '@/utils/test-utils'
 import Heading from '.'

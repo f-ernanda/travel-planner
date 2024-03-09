@@ -7,7 +7,7 @@ import Menu from '.'
 beforeAll(() => {})
 
 describe('<Menu />', () => {
-  it('should render the menu correctly', () => {
+  it('should render the menu correctly on mobile', () => {
     renderWithTheme(<Menu />)
 
     window.innerWidth = 500
@@ -16,7 +16,21 @@ describe('<Menu />', () => {
     waitFor(() => {
       expect(screen.getByLabelText(/Open menu/i)).toBeInTheDocument()
       expect(
-        screen.getByRole('img', { name: /Travel Ease/i })
+        screen.getByRole('img', { name: /Travel Ease logo icon/i })
+      ).toBeInTheDocument()
+    })
+  })
+
+  it('should render the menu correctly on desktop', () => {
+    renderWithTheme(<Menu />)
+
+    window.innerWidth = 1000
+    fireEvent(window, new Event('resize'))
+
+    waitFor(() => {
+      expect(screen.queryByLabelText(/Open menu/i)).not.toBeInTheDocument()
+      expect(
+        screen.getByRole('img', { name: /Travel Ease logo/i })
       ).toBeInTheDocument()
     })
   })

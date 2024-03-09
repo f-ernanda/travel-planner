@@ -11,7 +11,7 @@ const LogoIcon = ({ $size = 'normal' }: LogoIconProps) => (
       fill="none"
       viewBox="0 0 106 91"
       role="img"
-      aria-label="Travel Ease"
+      aria-label="Travel Ease logo icon"
     >
       <mask
         id="a"

@@ -11,7 +11,7 @@ const Logo = ({ $size = 'normal' }: LogoProps) => (
       fill="none"
       viewBox="0 0 131 25"
       role="img"
-      aria-label="Travel Ease"
+      aria-label="Travel Ease logo"
     >
       <path
         fill="#565D5D"
