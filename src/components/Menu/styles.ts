@@ -1,6 +1,7 @@
 'use client'
 
 import styled, { css } from 'styled-components'
+import media from 'styled-media-query'
 
 export const Wrapper = styled.menu`
   ${({ theme }) => css`
@@ -67,13 +68,33 @@ export const MenuMobile = styled.nav<MenuMobileProps>`
     }
 
     ${AuthenticationPanel} {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      padding: ${theme.spacings.regular};
+      padding-top: 0;
+
+      > span {
+        font-size: ${theme.fonts.sizes.tiny};
+        display: block;
+        margin-block: ${theme.spacings.small};
+      }
+
       transform: ${$isOpen ? 'translateY(0)' : 'translateY(3rem)'};
       transition: transform ${theme.transitions.default};
     }
   `}
 `
 
-export const MenuList = styled.div``
+export const MenuList = styled.div`
+  ${({ theme }) => css`
+    ${media.greaterThan('medium')`
+      align-items: center;
+      display: flex;
+      gap: calc(${theme.grid.gutter} * 2) ;
+    `}
+  `}
+`
 
 export const MenuLink = styled.a`
   ${({ theme }) => css`
@@ -108,17 +129,11 @@ export const MenuLink = styled.a`
 
 export const AuthenticationPanel = styled.div`
   ${({ theme }) => css`
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    padding: ${theme.spacings.regular};
-    padding-top: 0;
-
-    > span {
-      font-size: ${theme.fonts.sizes.tiny};
-      display: block;
-      margin-block: ${theme.spacings.small};
-    }
+    ${media.greaterThan('medium')`
+      align-items: center;
+      display: flex;
+      gap: ${theme.grid.gutter};
+    `}
   `}
 `
 
