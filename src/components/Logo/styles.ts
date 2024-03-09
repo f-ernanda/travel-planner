@@ -18,6 +18,7 @@ const wrapperModifiers = {
     width: 20rem;
 
     ${media.greaterThan('medium')`
+      height: 5.8rem;
       width: 30rem;
     `}
   `
