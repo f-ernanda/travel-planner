@@ -1,7 +1,7 @@
 import * as Styled from './styles'
 
-import Button from '../Button'
-import TextField from '../TextField'
+import Button from '@/components/Button'
+import TextField from '@/components/TextField'
 
 const SignInForm = () => (
   <Styled.Wrapper>

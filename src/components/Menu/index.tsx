@@ -1,10 +1,11 @@
+'use client'
+
 import { useState } from 'react'
 import { Menu as MenuIcon } from '@styled-icons/material-rounded/Menu'
 import { Close as CloseIcon } from '@styled-icons/material-rounded/Close'
 
 import * as Styled from './styles'
 import { MediaWrapper } from '@/utils/media-utils'
-import LogoIcon from '@/components/LogoIcon'
 import Button from '@/components/Button'
 import Logo from '@/components/Logo'
 
@@ -19,7 +20,7 @@ const Menu = ({ $username }: MenuProps) => {
     <Styled.Wrapper>
       <MediaWrapper $lessThan="medium">
         <Styled.MenuWrapper>
-          <LogoIcon />
+          <Logo $size="large" />
           <Styled.IconWrapper>
             <MenuIcon aria-label="Open menu" onClick={() => setIsOpen(true)} />
           </Styled.IconWrapper>
@@ -50,7 +51,7 @@ const Menu = ({ $username }: MenuProps) => {
 
       <MediaWrapper $greaterThan="medium">
         <Styled.MenuWrapper>
-          <Logo />
+          <Logo $size="large" />
           <Styled.MenuList>
             <Styled.MenuLink href="#">Home</Styled.MenuLink>
             {$username && (

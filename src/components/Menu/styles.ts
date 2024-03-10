@@ -17,7 +17,7 @@ export const MenuWrapper = styled.div`
 
 export const IconWrapper = styled.div`
   ${({ theme }) => css`
-    color: ${theme.colors.darkGray};
+    color: ${theme.colors.white};
     cursor: pointer;
     width: 4.8rem;
   `}
@@ -31,7 +31,7 @@ export const MenuMobile = styled.nav<MenuMobileProps>`
   ${({ theme, $isOpen }) => css`
     opacity: ${$isOpen ? 1 : 0};
     pointer-events: ${$isOpen ? 'all' : 'none'};
-    background: ${theme.colors.lightGray};
+    background: ${theme.colors.black};
     bottom: 0;
     display: flex;
     flex-direction: column;
@@ -43,6 +43,7 @@ export const MenuMobile = styled.nav<MenuMobileProps>`
     right: 0;
     top: 0;
     transition: opacity ${theme.transitions.default};
+    z-index: 2;
 
     ${IconWrapper} {
       position: absolute;
@@ -60,7 +61,7 @@ export const MenuMobile = styled.nav<MenuMobileProps>`
 
     ${MenuLink} {
       transform: ${$isOpen ? 'translateY(0)' : 'translateY(3rem)'};
-      color: ${theme.colors.black};
+      color: ${theme.colors.white};
       font-size: ${theme.fonts.sizes.large};
       font-weight: ${theme.fonts.bold};
       margin-bottom: ${theme.spacings.small};
@@ -75,8 +76,9 @@ export const MenuMobile = styled.nav<MenuMobileProps>`
       padding-top: 0;
 
       > span {
-        font-size: ${theme.fonts.sizes.tiny};
+        color: ${theme.colors.white};
         display: block;
+        font-size: ${theme.fonts.sizes.tiny};
         margin-block: ${theme.spacings.small};
       }
 
@@ -98,6 +100,7 @@ export const MenuList = styled.div`
 
 export const MenuLink = styled.a`
   ${({ theme }) => css`
+    color: ${theme.colors.white};
     font-size: ${theme.fonts.sizes.regular};
     position: relative;
     text-align: center;

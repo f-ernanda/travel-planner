@@ -33,12 +33,20 @@ const wrapperModifiers = {
         border-left-width: ${theme.thickness.regular};
         padding-left: ${theme.spacings.small};
     `}
+  `,
+
+  dark: (theme: DefaultTheme) => css`
+    color: ${theme.colors.black};
+  `,
+
+  light: (theme: DefaultTheme) => css`
+    color: ${theme.colors.white};
   `
 }
 
 export const Wrapper = styled.h2<HeadingProps>`
-  ${({ theme, $withHorizontalLine, $withVerticalLine }) => css`
-    color: ${theme.colors.black};
+  ${({ theme, $withHorizontalLine, $withVerticalLine, $color }) => css`
+    color: ${theme.colors.white};
     font-size: ${theme.fonts.sizes.large};
 
     ${media.greaterThan('medium')`
@@ -47,5 +55,6 @@ export const Wrapper = styled.h2<HeadingProps>`
 
     ${$withHorizontalLine && wrapperModifiers.withHorizontalLine(theme)}
     ${$withVerticalLine && wrapperModifiers.withVerticalLine(theme)}
+    ${$color && wrapperModifiers[$color](theme)}
   `}
 `

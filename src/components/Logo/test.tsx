@@ -1,10 +1,11 @@
-import { render, screen } from '@testing-library/react'
+import { screen } from '@testing-library/react'
+import { renderWithTheme } from '@/utils/test-utils'
 
 import Logo from '.'
 
 describe('<Logo />', () => {
   it('should render the small logo by default', () => {
-    render(<Logo />)
+    renderWithTheme(<Logo />)
 
     expect(screen.getByLabelText(/Travel Ease/i).parentElement).toHaveStyle({
       width: '12rem'
@@ -12,7 +13,7 @@ describe('<Logo />', () => {
   })
 
   it('should render the regular logo by default on desktop', () => {
-    render(<Logo />)
+    renderWithTheme(<Logo />)
 
     expect(screen.getByLabelText(/Travel Ease/i).parentElement).toHaveStyleRule(
       'width',
@@ -24,7 +25,7 @@ describe('<Logo />', () => {
   })
 
   it('should render the larger logo when prop is set', () => {
-    render(<Logo $size="large" />)
+    renderWithTheme(<Logo $size="large" />)
 
     const logo = screen.getByLabelText(/Travel Ease/i).parentElement
 

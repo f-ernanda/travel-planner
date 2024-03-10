@@ -2,8 +2,8 @@
 
 import styled, { css } from 'styled-components'
 
-import * as TextFieldStyles from '../TextField/styles'
-import * as ButtonStyles from '../Button/styles'
+import * as TextFieldStyles from '@/components/TextField/styles'
+import * as ButtonStyles from '@/components/Button/styles'
 
 export const Wrapper = styled.div`
   ${({ theme }) => css`

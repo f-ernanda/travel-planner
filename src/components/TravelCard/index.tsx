@@ -23,7 +23,9 @@ const TravelCard = ({
     <Styled.ImageBox>
       <Styled.ImageItem fill src={$img} alt={$title} />
     </Styled.ImageBox>
-    <Heading $withHorizontalLine>{$title}</Heading>
+    <Heading $withHorizontalLine $color="dark">
+      {$title}
+    </Heading>
     <Styled.TravelContainer>
       <Styled.TravelItem>
         <span>Flights •&nbsp;</span>

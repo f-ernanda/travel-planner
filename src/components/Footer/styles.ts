@@ -35,13 +35,10 @@ export const LinkList = styled.div`
 
 export const Anchor = styled(Link)`
   ${({ theme }) => css`
+    color: ${theme.colors.white};
     font-size: ${theme.fonts.sizes.regular};
     position: relative;
     text-decoration: none;
-
-    ${media.greaterThan('medium')`
-      font-size: ${theme.fonts.sizes.large};
-    `}
 
     &:hover {
       &::after {
@@ -71,6 +68,6 @@ export const Copy = styled.small`
   ${({ theme }) => css`
     color: ${theme.colors.darkGray};
     font-size: ${theme.fonts.sizes.tiny};
-    margin-top: ${theme.spacings.small};
+    margin-block: ${theme.spacings.small};
   `}
 `

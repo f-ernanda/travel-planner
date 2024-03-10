@@ -36,7 +36,7 @@ const LogoIcon = ({ $size = 'normal' }: LogoIconProps) => (
         </mask>
         <g mask="url(#b)">
           <path
-            fill="#BAB9B4"
+            fill="#DAE4E4"
             d="M91.338 45.5c0 25.128-20.448 45.5-45.669 45.5C20.448 91 0 70.628 0 45.5S20.448 0 45.67 0c25.22 0 45.668 20.372 45.668 45.5Z"
           />
         </g>

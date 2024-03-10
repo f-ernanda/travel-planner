@@ -2,7 +2,9 @@
 
 import styled, { css } from 'styled-components'
 
-export const Wrapper = styled.div``
+export const Wrapper = styled.div`
+  width: 100%;
+`
 
 export const Label = styled.label`
   ${({ theme }) => css`
@@ -32,7 +34,7 @@ export const Input = styled.input`
     border: 0;
     color: ${theme.colors.black};
     font-size: ${theme.fonts.sizes.regular};
-    padding-block: ${theme.spacings.small};
+    padding-block: ${theme.spacings.tiny};
     outline: none;
     width: 100%;
   `}

@@ -1,6 +1,6 @@
 'use client'
 
-import styled, { css } from 'styled-components'
+import styled, { css, DefaultTheme } from 'styled-components'
 import media from 'styled-media-query'
 
 import { LogoProps } from '.'
@@ -21,11 +21,20 @@ const wrapperModifiers = {
       height: 5.8rem;
       width: 30rem;
     `}
+  `,
+
+  dark: (theme: DefaultTheme) => css`
+    color: ${theme.colors.black};
+  `,
+
+  light: (theme: DefaultTheme) => css`
+    color: ${theme.colors.white};
   `
 }
 
 export const Wrapper = styled.div<LogoProps>`
-  ${({ $size }) => css`
+  ${({ theme, $size, $textColor }) => css`
     ${$size && wrapperModifiers[$size]}
+    ${$textColor && wrapperModifiers[$textColor](theme)}
   `}
 `

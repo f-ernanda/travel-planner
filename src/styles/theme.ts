@@ -1,7 +1,7 @@
 export default {
   grid: {
     container: '140rem',
-    gutter: '2.4rem'
+    gutter: '2.8rem'
   },
 
   fonts: {
@@ -24,7 +24,7 @@ export default {
     black: '#151C1B',
     lightGray: '#BDC3C3',
     darkGray: '#565D5D',
-    alert: '#73171D'
+    bg: '#030518'
   },
 
   spacings: {

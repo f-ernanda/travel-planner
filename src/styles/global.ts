@@ -7,6 +7,11 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
+    &::before,
+    &::after {
+      box-sizing: inherit;
+    }
   }
 
   ${({ theme }) => css`
@@ -16,6 +21,7 @@ const GlobalStyles = createGlobalStyle`
 
     body {
       font-size: ${theme.fonts.sizes.regular};
+      background-color: ${theme.colors.white};
     }
 
     button,
