@@ -21,7 +21,7 @@ export const Wrapper = styled.button<ButtonProps>`
     padding: ${theme.spacings.tiny} ${theme.spacings.small};
 
     &:hover {
-      background: ${theme.colors.primary}CC;
+      background: ${theme.colors.primaryAlpha};
     }
 
     ${$fullWidth && wrapperModifiers.fullWidth}

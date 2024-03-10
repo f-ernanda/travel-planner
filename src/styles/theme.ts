@@ -19,6 +19,7 @@ export default {
 
   colors: {
     primary: '#0D8C84',
+    primaryAlpha: '#0D8C84CC',
     white: '#DAE4E4',
     black: '#151C1B',
     lightGray: '#BDC3C3',
@@ -47,5 +48,9 @@ export default {
   transitions: {
     default: '.3s ease-in-out',
     fast: '.1s ease-in-out'
+  },
+
+  backgrounds: {
+    wave: 'linear-gradient(to right, #e4eded 0%, #d1e3e2 20%, #e4eded 40%, #e4eded 100%)'
   }
 } as const

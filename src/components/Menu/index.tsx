@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import * as Styled from './styles'
 import { Menu as MenuIcon } from '@styled-icons/material-rounded/Menu'
 import { Close as CloseIcon } from '@styled-icons/material-rounded/Close'
 
+import * as Styled from './styles'
+import { MediaWrapper } from '@/utils/media-utils'
 import LogoIcon from '@/components/LogoIcon'
 import Button from '@/components/Button'
-import { MediaWrapper } from '@/utils/media-utils'
 import Logo from '@/components/Logo'
 
 export type MenuProps = {
