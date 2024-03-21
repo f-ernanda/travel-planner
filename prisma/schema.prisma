@@ -1,0 +1,49 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+type PlaceLocation {
+  latitude  Float
+  longitude Float
+}
+
+model Flight {
+  id             String    @id @default(auto()) @map("_id") @db.ObjectId
+  place          String
+  departure_city String?
+  departure_date DateTime?
+  arrival_city   String?
+  arrival_date   DateTime?
+  price          Int
+  company        String
+  stops          Int
+
+  @@map("flights")
+}
+
+model Hotel {
+  id              String @id @default(auto()) @map("_id") @db.ObjectId
+  place           String
+  name            String
+  price_per_night Int
+  rating          Float
+  address         String
+
+  @@map("hotels")
+}
+
+model Place {
+  id        String        @id @default(auto()) @map("_id") @db.ObjectId
+  name      String
+  country   String
+  image_url String
+  tags      String[]
+  location  PlaceLocation
+
+  @@map("places")
+}

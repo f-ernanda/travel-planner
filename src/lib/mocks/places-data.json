@@ -1,0 +1,215 @@
+[
+  {
+    "name": "Paris",
+    "country": "France",
+    "tags": [
+      "Architecture",
+      "Charming",
+      "Foodie",
+      "Nightlife",
+      "History",
+      "Museums",
+      "Performing Arts"
+    ],
+    "location": {
+      "latitude": 48.8566,
+      "longitude": 2.3522
+    },
+    "image_url": "https://source.unsplash.com/featured/?paris"
+  },
+  {
+    "name": "Tokyo",
+    "country": "Japan",
+    "tags": [
+      "Architecture",
+      "Foodie",
+      "Nightlife",
+      "History",
+      "Museums",
+      "Outdoorsy"
+    ],
+    "location": {
+      "latitude": 35.6895,
+      "longitude": 139.6917
+    },
+    "image_url": "https://source.unsplash.com/featured/?tokyo"
+  },
+  {
+    "name": "New York City",
+    "country": "USA",
+    "tags": [
+      "Architecture",
+      "Foodie",
+      "Nightlife",
+      "History",
+      "Museums",
+      "Performing Arts",
+      "Music"
+    ],
+    "location": {
+      "latitude": 40.7128,
+      "longitude": -74.006
+    },
+    "image_url": "https://source.unsplash.com/featured/?newyork"
+  },
+  {
+    "name": "Rome",
+    "country": "Italy",
+    "tags": ["Architecture", "Foodie", "History", "Museums"],
+    "location": {
+      "latitude": 41.9028,
+      "longitude": 12.4964
+    },
+    "image_url": "https://source.unsplash.com/featured/?rome"
+  },
+  {
+    "name": "Barcelona",
+    "country": "Spain",
+    "tags": [
+      "Architecture",
+      "Charming",
+      "Foodie",
+      "Nightlife",
+      "History",
+      "Museums",
+      "Beach Town"
+    ],
+    "location": {
+      "latitude": 41.3851,
+      "longitude": 2.1734
+    },
+    "image_url": "https://source.unsplash.com/featured/?barcelona"
+  },
+  {
+    "name": "London",
+    "country": "UK",
+    "tags": [
+      "Architecture",
+      "Charming",
+      "Foodie",
+      "Nightlife",
+      "History",
+      "Museums",
+      "Performing Arts",
+      "Music"
+    ],
+    "location": {
+      "latitude": 51.5074,
+      "longitude": -0.1278
+    },
+    "image_url": "https://source.unsplash.com/featured/?london"
+  },
+  {
+    "name": "Sydney",
+    "country": "Australia",
+    "tags": [
+      "Charming",
+      "Foodie",
+      "Nightlife",
+      "History",
+      "Museums",
+      "Performing Arts",
+      "Beach Town"
+    ],
+    "location": {
+      "latitude": -33.8688,
+      "longitude": 151.2093
+    },
+    "image_url": "https://source.unsplash.com/featured/?sydney"
+  },
+  {
+    "name": "San Francisco",
+    "country": "USA",
+    "tags": [
+      "Architecture",
+      "Foodie",
+      "Nightlife",
+      "History",
+      "Museums",
+      "Performing Arts",
+      "Outdoorsy"
+    ],
+    "location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    },
+    "image_url": "https://source.unsplash.com/featured/?sanfrancisco"
+  },
+  {
+    "name": "Bangkok",
+    "country": "Thailand",
+    "tags": ["Foodie", "Nightlife", "History", "Museums"],
+    "location": {
+      "latitude": 13.7563,
+      "longitude": 100.5018
+    },
+    "image_url": "https://source.unsplash.com/featured/?bangkok"
+  },
+  {
+    "name": "Cape Town",
+    "country": "South Africa",
+    "tags": [
+      "Charming",
+      "Foodie",
+      "Nightlife",
+      "History",
+      "Beach Town",
+      "Outdoorsy"
+    ],
+    "location": {
+      "latitude": -33.9249,
+      "longitude": 18.4241
+    },
+    "image_url": "https://source.unsplash.com/featured/?capetown"
+  },
+  {
+    "name": "Stockholm",
+    "country": "Sweden",
+    "tags": ["Charming", "History", "Architecture", "Museums"],
+    "location": {
+      "latitude": 59.325,
+      "longitude": 18.07
+    },
+    "image_url": "https://source.unsplash.com/featured/?stockholm"
+  },
+  {
+    "name": "Oslo",
+    "country": "Norway",
+    "tags": ["Charming", "Outdoorsy"],
+    "location": {
+      "latitude": 59.925,
+      "longitude": 10.758
+    },
+    "image_url": "https://source.unsplash.com/featured/?oslo"
+  },
+  {
+    "name": "Copenhagen",
+    "country": "Denmark",
+    "tags": ["Charming", "History", "Architecture", "Nightlife"],
+    "location": {
+      "latitude": 55.679,
+      "longitude": 12.595
+    },
+    "image_url": "https://source.unsplash.com/featured/?copenhagen"
+  },
+  {
+    "name": "Helsinki",
+    "country": "Finland",
+    "tags": ["Charming", "History", "Architecture", "Outdoorsy"],
+    "location": {
+      "latitude": 60.145,
+      "longitude": 24.987
+    },
+    "image_url": "https://source.unsplash.com/featured/?helsinki"
+  },
+  {
+    "name": "Reykjavik",
+    "country": "Iceland",
+    "tags": ["Charming", "Architecture", "History"],
+    "location": {
+      "latitude": 64.147,
+      "longitude": -21.935
+    },
+    "image_url": "https://source.unsplash.com/featured/?reykjavik"
+  }
+]

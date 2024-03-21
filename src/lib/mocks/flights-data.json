@@ -1,0 +1,302 @@
+[
+  {
+    "place": "Paris",
+    "departure_city": null,
+    "departure_date": null,
+    "arrival_city": "Paris",
+    "arrival_date": null,
+    "price": 800,
+    "company": "Air France",
+    "stops": 0
+  },
+  {
+    "place": "Paris",
+    "departure_city": null,
+    "departure_date": null,
+    "arrival_city": "Paris",
+    "arrival_date": null,
+    "price": 900,
+    "company": "Lufthansa",
+    "stops": 1
+  },
+  {
+    "place": "Tokyo",
+    "departure_city": null,
+    "departure_date": null,
+    "arrival_city": "Tokyo",
+    "arrival_date": null,
+    "price": 1200,
+    "company": "Japan Airlines",
+    "stops": 0
+  },
+  {
+    "place": "Tokyo",
+    "departure_city": null,
+    "departure_date": null,
+    "arrival_city": "Tokyo",
+    "arrival_date": null,
+    "price": 1300,
+    "company": "ANA",
+    "stops": 1
+  },
+  {
+    "place": "New York City",
+    "departure_city": null,
+    "departure_date": null,
+    "arrival_city": "New York City",
+    "arrival_date": null,
+    "price": 1000,
+    "company": "Delta Airlines",
+    "stops": 0
+  },
+  {
+    "place": "New York City",
+    "departure_city": null,
+    "departure_date": null,
+    "arrival_city": "New York City",
+    "arrival_date": null,
+    "price": 1100,
+    "company": "United Airlines",
+    "stops": 1
+  },
+  {
+    "place": "Rome",
+    "departure_city": null,
+    "departure_date": null,
+    "arrival_city": "Rome",
+    "arrival_date": null,
+    "price": 850,
+    "company": "Alitalia",
+    "stops": 0
+  },
+  {
+    "place": "Rome",
+    "departure_city": null,
+    "departure_date": null,
+    "arrival_city": "Rome",
+    "arrival_date": null,
+    "price": 950,
+    "company": "British Airways",
+    "stops": 1
+  },
+  {
+    "place": "Barcelona",
+    "departure_city": null,
+    "departure_date": null,
+    "arrival_city": "Barcelona",
+    "arrival_date": null,
+    "price": 700,
+    "company": "Vueling",
+    "stops": 0
+  },
+  {
+    "place": "Barcelona",
+    "departure_city": null,
+    "departure_date": null,
+    "arrival_city": "Barcelona",
+    "arrival_date": null,
+    "price": 800,
+    "company": "Iberia",
+    "stops": 1
+  },
+  {
+    "place": "London",
+    "departure_city": null,
+    "departure_date": null,
+    "arrival_city": "London",
+    "arrival_date": null,
+    "price": 750,
+    "company": "British Airways",
+    "stops": 0
+  },
+  {
+    "place": "London",
+    "departure_city": null,
+    "departure_date": null,
+    "arrival_city": "London",
+    "arrival_date": null,
+    "price": 850,
+    "company": "Virgin Atlantic",
+    "stops": 1
+  },
+  {
+    "place": "Sydney",
+    "departure_city": null,
+    "departure_date": null,
+    "arrival_city": "Sydney",
+    "arrival_date": null,
+    "price": 1500,
+    "company": "Qantas",
+    "stops": 0
+  },
+  {
+    "place": "Sydney",
+    "departure_city": null,
+    "departure_date": null,
+    "arrival_city": "Sydney",
+    "arrival_date": null,
+    "price": 1600,
+    "company": "Singapore Airlines",
+    "stops": 1
+  },
+  {
+    "place": "San Francisco",
+    "departure_city": null,
+    "departure_date": null,
+    "arrival_city": "San Francisco",
+    "arrival_date": null,
+    "price": 1100,
+    "company": "American Airlines",
+    "stops": 0
+  },
+  {
+    "place": "San Francisco",
+    "departure_city": null,
+    "departure_date": null,
+    "arrival_city": "San Francisco",
+    "arrival_date": null,
+    "price": 1200,
+    "company": "Southwest Airlines",
+    "stops": 1
+  },
+  {
+    "place": "Bangkok",
+    "departure_city": null,
+    "departure_date": null,
+    "arrival_city": "Bangkok",
+    "arrival_date": null,
+    "price": 900,
+    "company": "Thai Airways",
+    "stops": 0
+  },
+  {
+    "place": "Bangkok",
+    "departure_city": null,
+    "departure_date": null,
+    "arrival_city": "Bangkok",
+    "arrival_date": null,
+    "price": 1000,
+    "company": "Emirates",
+    "stops": 1
+  },
+  {
+    "place": "Cape Town",
+    "departure_city": null,
+    "departure_date": null,
+    "arrival_city": "Cape Town",
+    "arrival_date": null,
+    "price": 1100,
+    "company": "South African Airways",
+    "stops": 0
+  },
+  {
+    "place": "Cape Town",
+    "departure_city": null,
+    "departure_date": null,
+    "arrival_city": "Cape Town",
+    "arrival_date": null,
+    "price": 1200,
+    "company": "Qatar Airways",
+    "stops": 1
+  },
+  {
+    "place": "Stockholm",
+    "departure_city": null,
+    "departure_date": null,
+    "arrival_city": "Stockholm",
+    "arrival_date": null,
+    "price": 500,
+    "company": "SAS",
+    "stops": 0
+  },
+  {
+    "place": "Stockholm",
+    "departure_city": null,
+    "departure_date": null,
+    "arrival_city": "Stockholm",
+    "arrival_date": null,
+    "price": 550,
+    "company": "SAS",
+    "stops": 1
+  },
+  {
+    "place": "Oslo",
+    "departure_city": null,
+    "departure_date": null,
+    "arrival_city": "Oslo",
+    "arrival_date": null,
+    "price": 450,
+    "company": "SAS",
+    "stops": 0
+  },
+  {
+    "place": "Oslo",
+    "departure_city": null,
+    "departure_date": null,
+    "arrival_city": "Oslo",
+    "arrival_date": null,
+    "price": 500,
+    "company": "SAS",
+    "stops": 1
+  },
+  {
+    "place": "Copenhagen",
+    "departure_city": null,
+    "departure_date": null,
+    "arrival_city": "Copenhagen",
+    "arrival_date": null,
+    "price": 400,
+    "company": "SAS",
+    "stops": 0
+  },
+  {
+    "place": "Copenhagen",
+    "departure_city": null,
+    "departure_date": null,
+    "arrival_city": "Copenhagen",
+    "arrival_date": null,
+    "price": 450,
+    "company": "SAS",
+    "stops": 1
+  },
+  {
+    "place": "Helsinki",
+    "departure_city": null,
+    "departure_date": null,
+    "arrival_city": "Helsinki",
+    "arrival_date": null,
+    "price": 600,
+    "company": "SAS",
+    "stops": 0
+  },
+  {
+    "place": "Helsinki",
+    "departure_city": null,
+    "departure_date": null,
+    "arrival_city": "Helsinki",
+    "arrival_date": null,
+    "price": 650,
+    "company": "SAS",
+    "stops": 1
+  },
+  {
+    "place": "Reykjavik",
+    "departure_city": null,
+    "departure_date": null,
+    "arrival_city": "Reykjavik",
+    "arrival_date": null,
+    "price": 700,
+    "company": "SAS",
+    "stops": 0
+  },
+  {
+    "place": "Reykjavik",
+    "departure_city": null,
+    "departure_date": null,
+    "arrival_city": "Reykjavik",
+    "arrival_date": null,
+    "price": 750,
+    "company": "SAS",
+    "stops": 1
+  }
+]

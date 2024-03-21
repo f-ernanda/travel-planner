@@ -4,9 +4,6 @@ on: [pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./client
     steps:
       - name: Checkout repository default branch
         uses: actions/checkout@v4
@@ -16,7 +13,6 @@ jobs:
         with:
           node-version: 20.x
           cache: "npm"
-          cache-dependency-path: "./client/package-lock.json"
 
       - name: Install dependencies
         run: npm install

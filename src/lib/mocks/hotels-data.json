@@ -1,0 +1,212 @@
+[
+  {
+    "place": "Paris",
+    "name": "Luxury Hotel Paris",
+    "price_per_night": 300,
+    "rating": 4.5,
+    "address": "123 Avenue des Champs-Élysées, Paris, France"
+  },
+  {
+    "place": "Paris",
+    "name": "Cozy Boutique Hotel",
+    "price_per_night": 200,
+    "rating": 4.2,
+    "address": "45 Rue de Rivoli, Paris, France"
+  },
+  {
+    "place": "Tokyo",
+    "name": "Tokyo Palace Hotel",
+    "price_per_night": 250,
+    "rating": 4.2,
+    "address": "1-1-1 Marunouchi, Chiyoda-ku, Tokyo, Japan"
+  },
+  {
+    "place": "Tokyo",
+    "name": "Urban Zen Hotel",
+    "price_per_night": 180,
+    "rating": 4.0,
+    "address": "2-1-1 Nihonbashi, Chuo-ku, Tokyo, Japan"
+  },
+  {
+    "place": "New York City",
+    "name": "Grand Hotel New York",
+    "price_per_night": 400,
+    "rating": 4.7,
+    "address": "123 Broadway, New York, NY, USA"
+  },
+  {
+    "place": "New York City",
+    "name": "Chic Boutique Hotel",
+    "price_per_night": 220,
+    "rating": 4.3,
+    "address": "456 5th Avenue, New York, NY, USA"
+  },
+  {
+    "place": "Rome",
+    "name": "Renaissance Rome Hotel",
+    "price_per_night": 280,
+    "rating": 4.4,
+    "address": "Via del Corso, 200, Rome, Italy"
+  },
+  {
+    "place": "Rome",
+    "name": "Vintage Villa Roma",
+    "price_per_night": 180,
+    "rating": 4.0,
+    "address": "Via dei Condotti, 100, Rome, Italy"
+  },
+  {
+    "place": "Barcelona",
+    "name": "Beachfront Resort Barcelona",
+    "price_per_night": 350,
+    "rating": 4.6,
+    "address": "Carrer de la Marina, 200, Barcelona, Spain"
+  },
+  {
+    "place": "Barcelona",
+    "name": "City Center Boutique Hotel",
+    "price_per_night": 220,
+    "rating": 4.3,
+    "address": "Plaça de Catalunya, 150, Barcelona, Spain"
+  },
+  {
+    "place": "London",
+    "name": "Regal London Hotel",
+    "price_per_night": 380,
+    "rating": 4.8,
+    "address": "Westminster Bridge Road, London, UK"
+  },
+  {
+    "place": "London",
+    "name": "Quaint Inn London",
+    "price_per_night": 200,
+    "rating": 4.2,
+    "address": "Bloomsbury Square, London, UK"
+  },
+  {
+    "place": "Sydney",
+    "name": "Harbor View Sydney",
+    "price_per_night": 400,
+    "rating": 4.7,
+    "address": "Circular Quay, Sydney, Australia"
+  },
+  {
+    "place": "Sydney",
+    "name": "Cosy Sydney Retreat",
+    "price_per_night": 250,
+    "rating": 4.4,
+    "address": "Darling Harbour, Sydney, Australia"
+  },
+  {
+    "place": "San Francisco",
+    "name": "Urban Oasis San Francisco",
+    "price_per_night": 380,
+    "rating": 4.6,
+    "address": "Market Street, San Francisco, USA"
+  },
+  {
+    "place": "San Francisco",
+    "name": "Historic Hideaway SF",
+    "price_per_night": 220,
+    "rating": 4.2,
+    "address": "Nob Hill, San Francisco, USA"
+  },
+  {
+    "place": "Bangkok",
+    "name": "Riverside Retreat Bangkok",
+    "price_per_night": 300,
+    "rating": 4.5,
+    "address": "Chao Phraya River, Bangkok, Thailand"
+  },
+  {
+    "place": "Bangkok",
+    "name": "Trendy Boutique Hotel",
+    "price_per_night": 180,
+    "rating": 4.0,
+    "address": "Sukhumvit Road, Bangkok, Thailand"
+  },
+  {
+    "place": "Cape Town",
+    "name": "Beachfront Bliss Cape Town",
+    "price_per_night": 350,
+    "rating": 4.6,
+    "address": "Camps Bay, Cape Town, South Africa"
+  },
+  {
+    "place": "Cape Town",
+    "name": "Mountain View Lodge",
+    "price_per_night": 220,
+    "rating": 4.3,
+    "address": "Table Mountain National Park, Cape Town, South Africa"
+  },
+  {
+    "place": "Stockholm",
+    "name": "Grand Hotel Stockholm",
+    "price_per_night": 350,
+    "rating": 4.7,
+    "address": "Södra Blasieholmshamnen 8, 103 27 Stockholm, Sweden"
+  },
+  {
+    "place": "Stockholm",
+    "name": "Hotel Diplomat Stockholm",
+    "price_per_night": 300,
+    "rating": 4.5,
+    "address": "Strandvägen 7C, 114 56 Stockholm, Sweden"
+  },
+  {
+    "place": "Oslo",
+    "name": "The Thief",
+    "price_per_night": 400,
+    "rating": 4.8,
+    "address": "Landgangen 1, 0252 Oslo, Norway"
+  },
+  {
+    "place": "Oslo",
+    "name": "Grand Hotel Oslo",
+    "price_per_night": 350,
+    "rating": 4.6,
+    "address": "Karl Johans gate 31, 0159 Oslo, Norway"
+  },
+  {
+    "place": "Copenhagen",
+    "name": "Nobis Hotel Copenhagen",
+    "price_per_night": 380,
+    "rating": 4.7,
+    "address": "Niels Brocks Gade 1, 1574 Copenhagen, Denmark"
+  },
+  {
+    "place": "Copenhagen",
+    "name": "Hotel d'Angleterre",
+    "price_per_night": 420,
+    "rating": 4.9,
+    "address": "Kongens Nytorv 34, 1050 Copenhagen, Denmark"
+  },
+  {
+    "place": "Helsinki",
+    "name": "Hotel Haven",
+    "price_per_night": 370,
+    "rating": 4.7,
+    "address": "Unioninkatu 17, 00130 Helsinki, Finland"
+  },
+  {
+    "place": "Helsinki",
+    "name": "Hotel Kämp",
+    "price_per_night": 400,
+    "rating": 4.8,
+    "address": "Pohjoisesplanadi 29, 00100 Helsinki, Finland"
+  },
+  {
+    "place": "Reykjavik",
+    "name": "101 Hotel",
+    "price_per_night": 320,
+    "rating": 4.6,
+    "address": "Hverfisgata 10, 101 Reykjavík, Iceland"
+  },
+  {
+    "place": "Reykjavik",
+    "name": "Hotel Borg",
+    "price_per_night": 350,
+    "rating": 4.7,
+    "address": "Pósthússtræti 9-11, 101 Reykjavík, Iceland"
+  }
+]
