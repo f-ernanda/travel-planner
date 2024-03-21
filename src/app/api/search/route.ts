@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { prisma } from '@/lib/db/prisma'
 import { NextResponse } from 'next/server'
 
@@ -8,7 +9,7 @@ export const POST = async (req: Request) => {
     const places = await prisma.place.findMany({
       where: {
         tags: {
-          hasSome: selectedTags
+          hasEvery: selectedTags
         }
       }
     })
