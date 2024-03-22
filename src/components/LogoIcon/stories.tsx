@@ -7,3 +7,9 @@ export default {
 } as Meta
 
 export const Default: StoryObj = {}
+
+Default.parameters = {
+  backgrounds: {
+    default: 'primary'
+  }
+}

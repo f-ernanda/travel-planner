@@ -1,16 +1,15 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client'
 import * as Styled from './styles'
 
 import Menu from '@/components/Menu'
 import Heading from '@/components/Heading'
-// import Button from '@/components/Button'
 import TravelCard from '@/components/TravelCard'
 import Footer from '@/components/Footer'
 import { Container } from '@/utils/container-utils'
 import { useState } from 'react'
 import CheckboxList from '@/components/CheckboxList'
 import Button from '@/components/Button'
+import { TravelResult } from '@/types/results'
 
 const TAGS = [
   'Charming',
@@ -27,7 +26,7 @@ const TAGS = [
 
 const Main = () => {
   const [selectedTags, setSelectedTags] = useState<string[]>([])
-  const [searchResults, setSearchResults] = useState<any[]>([])
+  const [searchResults, setSearchResults] = useState<TravelResult[]>([])
 
   const handleCheckboxChange = (tag: string, checked: boolean) => {
     if (checked) {
@@ -68,8 +67,8 @@ const Main = () => {
         <Styled.SearchContainer>
           <Heading $withVerticalLine>Describe your next trip</Heading>
           <CheckboxList
-            tags={TAGS}
-            selectedTags={selectedTags}
+            $tags={TAGS}
+            $selectedTags={selectedTags}
             onChange={handleCheckboxChange}
           />
           <Button onClick={handleSearch}>Search</Button>

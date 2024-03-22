@@ -7,6 +7,34 @@ import theme from '../src/styles/theme'
 
 const inter = Inter({ subsets: ['latin'] })
 
+const preview: Preview = {
+  parameters: {
+    backgrounds: {
+      values: [
+        {
+          name: 'dark',
+          value: theme.colors.bg
+        },
+        {
+          name: 'light',
+          value: theme.colors.white
+        },
+        {
+          name: 'primary',
+          value: theme.colors.primaryAlpha
+        }
+      ]
+    },
+    controls: {
+      hideNoControlsWarning: true
+    },
+    options: {
+      showPanel: true,
+      panelDirection: 'right'
+    }
+  }
+}
+
 export const decorators = [
   (Story) => (
     <ThemeProvider theme={theme}>
@@ -17,3 +45,5 @@ export const decorators = [
     </ThemeProvider>
   )
 ]
+
+export default preview

@@ -16,3 +16,9 @@ export const Default: StoryObj = {}
 Default.args = {
   children: 'Travel Ease'
 }
+
+Default.parameters = {
+  backgrounds: {
+    default: 'primary'
+  }
+}

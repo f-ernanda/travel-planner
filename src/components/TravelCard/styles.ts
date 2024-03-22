@@ -18,7 +18,7 @@ export const Wrapper = styled.article`
       grid-template-areas:
         'img title details'
         'img info info';
-      width: 70.0rem
+      width: 100%
     `}
 
     & > h2,

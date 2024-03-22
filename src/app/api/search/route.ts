@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { prisma } from '@/lib/db/prisma'
 import { NextResponse } from 'next/server'
 
@@ -40,6 +39,9 @@ export const POST = async (req: Request) => {
 
     return NextResponse.json({ results }, { status: 200 })
   } catch (error) {
-    return NextResponse.json({ message: 'Error', error }, { status: 500 })
+    return NextResponse.json(
+      { message: 'An error occurred while processing your request.', error },
+      { status: 500 }
+    )
   }
 }

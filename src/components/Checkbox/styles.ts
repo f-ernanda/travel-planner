@@ -2,15 +2,6 @@
 
 import styled, { css } from 'styled-components'
 
-export const Label = styled.label`
-  ${({ theme }) => css`
-    cursor: pointer;
-    padding-left: ${theme.spacings.tiny};
-    color: ${theme.colors.white};
-    line-height: 1.8rem;
-  `}
-`
-
 export const Wrapper = styled.div`
   display: flex;
   align-items: center;
@@ -60,5 +51,14 @@ export const Input = styled.input`
         opacity: 1;
       }
     }
+  `}
+`
+
+export const Label = styled.label`
+  ${({ theme }) => css`
+    cursor: pointer;
+    padding-left: ${theme.spacings.tiny};
+    color: ${theme.colors.white};
+    line-height: 1.8rem;
   `}
 `

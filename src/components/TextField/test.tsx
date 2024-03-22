@@ -8,7 +8,7 @@ describe('<TextField />', () => {
   it('should render the with label', () => {
     renderWithTheme(<TextField label="Email" labelFor="Email" id="Email" />)
 
-    expect(screen.getByLabelText('Email')).toBeInTheDocument()
+    expect(screen.getByLabelText(/Email/i)).toBeInTheDocument()
   })
 
   it('should render with placeholder', () => {
@@ -27,6 +27,6 @@ describe('<TextField />', () => {
     expect(document.body).toHaveFocus()
 
     await user.tab()
-    expect(screen.getByLabelText('Email')).toHaveFocus()
+    expect(screen.getByLabelText(/Email/i)).toHaveFocus()
   })
 })

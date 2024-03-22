@@ -9,5 +9,8 @@ export default {
 export const Default: StoryObj = {}
 
 Default.parameters = {
-  layout: 'fullscreen'
+  layout: 'fullscreen',
+  backgrounds: {
+    default: 'primary'
+  }
 }

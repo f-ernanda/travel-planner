@@ -7,6 +7,6 @@ describe('<Footer />', () => {
   it('should render the footer correctly', () => {
     renderWithTheme(<Footer />)
 
-    expect(screen.getByText(/©/i, { exact: false })).toBeInTheDocument()
+    expect(screen.getByText('©', { exact: false })).toBeInTheDocument()
   })
 })

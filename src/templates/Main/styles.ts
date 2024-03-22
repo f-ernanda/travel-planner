@@ -33,7 +33,8 @@ export const Wrapper = styled.main`
           'menu menu'
           'search list'
           'footer footer';
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: minmax(1fr, 50rem) minmax(2fr, auto);
+        grid-template-rows: 25rem auto 1fr;
         min-height: 100vh;
       }
     `}
