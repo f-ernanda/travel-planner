@@ -1,5 +1,4 @@
-name: Build and deploy container app to Azure Web App - sastravelplanner
-
+name: Azure Web App Deployment
 on:
   push:
     branches:
@@ -9,23 +8,13 @@ on:
 env:
   DATABASE_URL: ${{ secrets.DATABASE_URL}}
   CI: false
+
 jobs:
   build:
     runs-on: 'ubuntu-latest'
-
     steps:
-      - uses: actions/checkout@v2
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20.x
-
-      - name: Install
-        run: npm i
-
-      - name: Build
-        run: npm run build
+      - name: Checkout repository default branch
+        uses: actions/checkout@v4
 
       - name: Log in to registry
         uses: docker/login-action@v2
@@ -36,8 +25,8 @@ jobs:
 
       - name: Build and push container image to registry
         run: |
-          docker build -t fernandaasilvaa/travel-planner:${{ github.sha }} .
-          docker push fernandaasilvaa/travel-planner:${{ github.sha }}
+          docker build --build-arg DATABASE_URL='${{ secrets.DATABASE_URL }}' -t ${{ secrets.AzureAppService_ContainerUsername_96ac73af7b154d18b89c4e83d062b1db }}/travel-planner:${{ github.sha }} .
+          docker push ${{ secrets.AzureAppService_ContainerUsername_96ac73af7b154d18b89c4e83d062b1db }}/travel-planner:${{ github.sha }}
 
   deploy:
     runs-on: ubuntu-latest
@@ -54,4 +43,4 @@ jobs:
           app-name: 'sastravelplanner'
           slot-name: 'production'
           publish-profile: ${{ secrets.AzureAppService_PublishProfile_6eed08bc14364bdc97345d979845c83c }}
-          images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_96ac73af7b154d18b89c4e83d062b1db }}/fernandaasilvaa/travel-planner:${{ github.sha }}'
+          images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_96ac73af7b154d18b89c4e83d062b1db }}/travel-planner:${{ github.sha }}'

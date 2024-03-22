@@ -1,8 +1,11 @@
 Dockerfile
 .dockerignore
-npm-debug.log
-README.md
 .git
-.github
-generators
+.next
 .vscode
+.env
+node_modules
+npm-debug.log
+coverage
+generators
+README.md
