@@ -1,32 +1,37 @@
-name: Azure Web App Deployment
+# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
+# More GitHub Actions for Azure: https://github.com/Azure/actions
+
+name: Build and deploy container app to Azure Web App - sastravelplanner
+
 on:
   push:
     branches:
       - main
   workflow_dispatch:
 
-env:
-  DATABASE_URL: ${{ secrets.DATABASE_URL}}
-  CI: false
-
 jobs:
   build:
     runs-on: 'ubuntu-latest'
+
     steps:
-      - name: Checkout repository default branch
-        uses: actions/checkout@v4
+    - uses: actions/checkout@v2
 
-      - name: Log in to registry
-        uses: docker/login-action@v2
-        with:
-          registry: https://index.docker.io/v1/
-          username: ${{ secrets.AzureAppService_ContainerUsername_96ac73af7b154d18b89c4e83d062b1db }}
-          password: ${{ secrets.AzureAppService_ContainerPassword_361dc17ad36d476281e2c69952c78507 }}
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v2
 
-      - name: Build and push container image to registry
-        run: |
-          docker build --build-arg DATABASE_URL='${{ secrets.DATABASE_URL }}' -t ${{ secrets.AzureAppService_ContainerUsername_96ac73af7b154d18b89c4e83d062b1db }}/travel-planner:${{ github.sha }} .
-          docker push ${{ secrets.AzureAppService_ContainerUsername_96ac73af7b154d18b89c4e83d062b1db }}/travel-planner:${{ github.sha }}
+    - name: Log in to registry
+      uses: docker/login-action@v2
+      with:
+        registry: https://index.docker.io/v1/
+        username: ${{ secrets.AzureAppService_ContainerUsername_1637caf0cab5444eb6ff1aae3f9e0a60 }}
+        password: ${{ secrets.AzureAppService_ContainerPassword_8d7449051fa543848d8705c9df8c3135 }}
+
+    - name: Build and push container image to registry
+      uses: docker/build-push-action@v3
+      with:
+        push: true
+        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_1637caf0cab5444eb6ff1aae3f9e0a60 }}/fernandaasilvaa/travel-planner:${{ github.sha }}
+        file: ./Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
@@ -36,11 +41,11 @@ jobs:
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
-      - name: Deploy to Azure Web App
-        id: deploy-to-webapp
-        uses: azure/webapps-deploy@v2
-        with:
-          app-name: 'sastravelplanner'
-          slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_6eed08bc14364bdc97345d979845c83c }}
-          images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_96ac73af7b154d18b89c4e83d062b1db }}/travel-planner:${{ github.sha }}'
+    - name: Deploy to Azure Web App
+      id: deploy-to-webapp
+      uses: azure/webapps-deploy@v2
+      with:
+        app-name: 'sastravelplanner'
+        slot-name: 'production'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_eadad1fef49c42baa8f7849f52580728 }}
+        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_1637caf0cab5444eb6ff1aae3f9e0a60 }}/fernandaasilvaa/travel-planner:${{ github.sha }}'
