@@ -1,11 +1,17 @@
+'use client'
+
+import SignInForm from '@/components/SignInForm'
+import Base from '../Base'
 import * as Styled from './styles'
 
-type AuthProps = {
-  children: React.ReactNode
+const Auth = () => {
+  return (
+    <Base $withFlex>
+      <Styled.Wrapper>
+        <SignInForm />
+      </Styled.Wrapper>
+    </Base>
+  )
 }
-
-const Auth = ({ children }: AuthProps) => (
-  <Styled.Wrapper>{children}</Styled.Wrapper>
-)
 
 export default Auth

@@ -1,10 +1,20 @@
 'use client'
 
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
+import media from 'styled-media-query'
 
-export const Wrapper = styled.main`
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  height: 100vh;
+export const Wrapper = styled.div`
+  ${({ theme }) => css`
+    background-color: ${theme.colors.white};
+    border-radius: ${theme.borders.radius};
+    padding: ${theme.spacings.regular} ${theme.spacings.huge};
+
+    ${media.lessThan('medium')`
+      margin-bottom ${theme.spacings.regular};
+    `}
+
+    ${media.greaterThan('medium')`
+      width: 50%;
+    `}
+  `}
 `

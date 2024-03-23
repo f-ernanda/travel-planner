@@ -1,16 +1,14 @@
 'use client'
 import * as Styled from './styles'
 
-import Menu from '@/components/Menu'
 import Heading from '@/components/Heading'
 import TravelCard from '@/components/TravelCard'
-import Footer from '@/components/Footer'
-import { Container } from '@/utils/container-utils'
 import { useState } from 'react'
 import CheckboxList from '@/components/CheckboxList'
 import Button from '@/components/Button'
 import { TravelResult } from '@/types/results'
 import TravelCardSkeleton from '@/components/TravelCardSkeleton'
+import Base from '../Base'
 
 const TAGS = [
   'Charming',
@@ -63,12 +61,8 @@ const Main = () => {
   }
 
   return (
-    <Styled.Wrapper>
-      <Container>
-        <Styled.MenuContainer>
-          <Menu />
-        </Styled.MenuContainer>
-
+    <Base>
+      <Styled.Wrapper>
         <Styled.SearchContainer>
           <Heading $withVerticalLine>Describe your next trip</Heading>
           <CheckboxList
@@ -110,12 +104,8 @@ const Main = () => {
             />
           ))}
         </Styled.TravelList>
-
-        <Styled.FooterContainer>
-          <Footer />
-        </Styled.FooterContainer>
-      </Container>
-    </Styled.Wrapper>
+      </Styled.Wrapper>
+    </Base>
   )
 }
 

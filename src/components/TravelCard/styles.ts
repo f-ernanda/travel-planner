@@ -8,6 +8,7 @@ export const Wrapper = styled.article`
   ${({ theme }) => css`
     background: ${theme.colors.white};
     border-radius: ${theme.borders.radius};
+    box-shadow: 0 0.4rem 0.5rem 0 rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     gap: ${theme.spacings.small};

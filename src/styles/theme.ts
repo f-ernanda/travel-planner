@@ -24,7 +24,8 @@ export default {
     black: '#151C1B',
     lightGray: '#BDC3C3',
     darkGray: '#565D5D',
-    bg: '#030518'
+    bg: '#030518',
+    alert: '#73171D'
   },
 
   spacings: {

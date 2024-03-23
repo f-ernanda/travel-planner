@@ -3,6 +3,9 @@ const nextConfig = {
   images: {
     domains: ['source.unsplash.com']
   },
+  compiler: {
+    styledComponents: true
+  },
   output: 'standalone'
 }
 
