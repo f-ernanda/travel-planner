@@ -34,16 +34,18 @@ const Menu = ({ $username }: MenuProps) => {
             />
           </Styled.IconWrapper>
           <Styled.MenuList>
-            <Styled.MenuLink href="#">Home</Styled.MenuLink>
+            <Styled.MenuLink href="/">Home</Styled.MenuLink>
             {$username && (
-              <Styled.MenuLink href="#">My account</Styled.MenuLink>
+              <Styled.MenuLink style={{ cursor: 'not-allowed' }}>
+                My account
+              </Styled.MenuLink>
             )}
           </Styled.MenuList>
           {!$username && (
             <Styled.AuthenticationPanel>
-              <Button $fullWidth>Log in</Button>
-              <span>or</span>
-              <Styled.SignUpLink href="#">Sign up</Styled.SignUpLink>
+              <Button as={'a'} $fullWidth href="/sign-in">
+                Log in
+              </Button>
             </Styled.AuthenticationPanel>
           )}
         </Styled.MenuMobile>
@@ -53,14 +55,17 @@ const Menu = ({ $username }: MenuProps) => {
         <Styled.MenuWrapper>
           <Logo $size="large" />
           <Styled.MenuList>
-            <Styled.MenuLink href="#">Home</Styled.MenuLink>
+            <Styled.MenuLink href="/">Home</Styled.MenuLink>
             {$username && (
-              <Styled.MenuLink href="#">My account</Styled.MenuLink>
+              <Styled.MenuLink style={{ cursor: 'not-allowed' }}>
+                My account
+              </Styled.MenuLink>
             )}
             {!$username && (
               <Styled.AuthenticationPanel>
-                <Button>Log in</Button>
-                <Styled.SignUpLink href="#">Sign up</Styled.SignUpLink>
+                <Button as={'a'} href="/sign-in">
+                  Log in
+                </Button>
               </Styled.AuthenticationPanel>
             )}
           </Styled.MenuList>

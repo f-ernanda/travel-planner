@@ -45,28 +45,25 @@ export const Wrapper = styled.article`
 
 export const ImageBox = styled.div`
   ${({ theme }) => css`
-    animation: waveSkeleton 1s linear infinite forwards;
-    background: ${theme.colors.lightGray};
-    background-image: ${theme.backgrounds.wave};
-    background-size: 80rem 20rem;
+    animation: skeleton-loading 1s linear infinite alternate;
     border-radius: ${theme.borders.radius} ${theme.borders.radius} 0 0;
     height: 20rem;
     position: relative;
     width: 100%;
 
-    @keyframes waveSkeleton {
-      from {
-        background-position: -40rem 0;
-      }
-      to {
-        background-position: 40rem 0;
-      }
-    }
-
     ${media.greaterThan('medium')`
-    border-radius: ${theme.borders.radius} 0 0 ${theme.borders.radius};
+      border-radius: ${theme.borders.radius} 0 0 ${theme.borders.radius};
       grid-area: img;
     `}
+
+    @keyframes skeleton-loading {
+      0% {
+        background-color: hsl(200, 20%, 80%);
+      }
+      100% {
+        background-color: hsl(200, 20%, 95%);
+      }
+    }
   `}
 `
 

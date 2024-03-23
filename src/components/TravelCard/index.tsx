@@ -1,6 +1,7 @@
 import * as Styled from './styles'
 import Heading from '@/components/Heading'
 import Button from '@/components/Button'
+import Link from 'next/link'
 
 export type TravelCardProps = {
   $img: string
@@ -9,6 +10,7 @@ export type TravelCardProps = {
   $hotel: string
   $flightPrice: string
   $hotelPrice: string
+  href: string
 }
 
 const TravelCard = ({
@@ -17,7 +19,8 @@ const TravelCard = ({
   $flight,
   $hotel,
   $flightPrice,
-  $hotelPrice
+  $hotelPrice,
+  href
 }: TravelCardProps) => (
   <Styled.Wrapper>
     <Styled.ImageBox>
@@ -39,7 +42,9 @@ const TravelCard = ({
       </Styled.TravelItem>
     </Styled.TravelContainer>
 
-    <Button>View details</Button>
+    <Link href={href} style={{ textDecoration: 'none' }}>
+      <Button as="a">View details</Button>
+    </Link>
   </Styled.Wrapper>
 )
 

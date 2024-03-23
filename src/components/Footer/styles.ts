@@ -1,6 +1,5 @@
 'use client'
 
-import Link from 'next/link'
 import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
@@ -33,7 +32,7 @@ export const LinkList = styled.div`
   `}
 `
 
-export const Anchor = styled(Link)`
+export const Anchor = styled.a`
   ${({ theme }) => css`
     color: ${theme.colors.white};
     font-size: ${theme.fonts.sizes.regular};

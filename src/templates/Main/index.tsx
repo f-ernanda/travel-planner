@@ -10,6 +10,7 @@ import { useState } from 'react'
 import CheckboxList from '@/components/CheckboxList'
 import Button from '@/components/Button'
 import { TravelResult } from '@/types/results'
+import TravelCardSkeleton from '@/components/TravelCardSkeleton'
 
 const TAGS = [
   'Charming',
@@ -27,6 +28,7 @@ const TAGS = [
 const Main = () => {
   const [selectedTags, setSelectedTags] = useState<string[]>([])
   const [searchResults, setSearchResults] = useState<TravelResult[]>([])
+  const [isLoaded, setIsLoaded] = useState(true)
 
   const handleCheckboxChange = (tag: string, checked: boolean) => {
     if (checked) {
@@ -38,6 +40,7 @@ const Main = () => {
 
   const handleSearch = async () => {
     try {
+      setIsLoaded(false)
       const response = await fetch('/api/search', {
         method: 'POST',
         headers: {
@@ -47,13 +50,15 @@ const Main = () => {
       })
 
       if (!response.ok) {
-        throw new Error('Failed to fetch data')
+        throw new Error('Failed to fetch data. Please try again later.')
       }
 
       const { results } = await response.json()
       setSearchResults(results)
     } catch (error) {
-      console.error('Error:', error)
+      console.error('Error occurred during search:', error)
+    } finally {
+      setIsLoaded(true)
     }
   }
 
@@ -76,9 +81,11 @@ const Main = () => {
 
         <Styled.TravelList>
           <Heading $withVerticalLine>Your results</Heading>
-          {searchResults.map((result, index) => (
+
+          {!isLoaded && <TravelCardSkeleton $count={3} />}
+          {searchResults.map((result) => (
             <TravelCard
-              key={index}
+              key={result.place.id}
               $img={result.place.image_url}
               $title={result.place.name}
               $flight={
@@ -99,6 +106,7 @@ const Main = () => {
                   ? `$${result.bestHotel.price_per_night}`
                   : 'N/A'
               }
+              href={`results/${result.place.id}`}
             />
           ))}
         </Styled.TravelList>

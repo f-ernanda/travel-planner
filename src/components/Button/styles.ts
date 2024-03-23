@@ -17,8 +17,11 @@ export const Wrapper = styled.button<ButtonProps>`
     border-radius: ${theme.borders.radius};
     color: ${theme.colors.white};
     cursor: pointer;
+    display: block;
     font-size: ${theme.fonts.sizes.regular};
     padding: ${theme.spacings.tiny} ${theme.spacings.small};
+    text-align: center;
+    text-decoration: none;
 
     &:hover {
       background: ${theme.colors.primaryAlpha};
