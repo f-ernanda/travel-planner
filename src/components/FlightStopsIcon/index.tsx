@@ -2,14 +2,15 @@ import { FlightLand, FlightTakeoff } from '@styled-icons/material-rounded'
 import * as Styled from './styles'
 
 type FlightStopsIconProps = {
-  $stops: number
+  $stops?: number
 }
 
-const FlightStopsIcon = ({ $stops }: FlightStopsIconProps) => (
+const FlightStopsIcon = ({ $stops = 0 }: FlightStopsIconProps) => (
   <Styled.Wrapper>
-    <FlightTakeoff />
+    <FlightTakeoff className="flight-takeoff" />
     {$stops === 0 && (
       <svg
+        className="zero-stops-icon"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 267 3"
@@ -25,6 +26,7 @@ const FlightStopsIcon = ({ $stops }: FlightStopsIconProps) => (
     )}
     {$stops === 1 && (
       <svg
+        className="one-stop-icon"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 267 16"
@@ -41,6 +43,7 @@ const FlightStopsIcon = ({ $stops }: FlightStopsIconProps) => (
     )}
     {$stops >= 2 && (
       <svg
+        className="two-or-more-stops-icon"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 267 16"
@@ -56,7 +59,7 @@ const FlightStopsIcon = ({ $stops }: FlightStopsIconProps) => (
         <circle cx="160" cy="8" r="30" fill="#0D8C84" />
       </svg>
     )}
-    <FlightLand />
+    <FlightLand className="flight-land" />
   </Styled.Wrapper>
 )
 

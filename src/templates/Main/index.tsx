@@ -4,11 +4,11 @@ import * as Styled from './styles'
 import Heading from '@/components/Heading'
 import TravelCard from '@/components/TravelCard'
 import { useState } from 'react'
-import CheckboxList from '@/components/CheckboxList'
 import Button from '@/components/Button'
 import { TravelResult } from '@/types/results'
 import TravelCardSkeleton from '@/components/TravelCardSkeleton'
 import Base from '../Base'
+import Checkbox from '@/components/Checkbox'
 
 const TAGS = [
   'Charming',
@@ -65,11 +65,20 @@ const Main = () => {
       <Styled.Wrapper>
         <Styled.SearchWrapper>
           <Heading $withVerticalLine>Describe your next trip</Heading>
-          <CheckboxList
-            $tags={TAGS}
-            $selectedTags={selectedTags}
-            onChange={handleCheckboxChange}
-          />
+          <Styled.CheckboxList>
+            {TAGS.map((tag, index) => (
+              <Checkbox
+                key={index}
+                value={tag}
+                checked={selectedTags.includes(tag)}
+                onChange={(event) =>
+                  handleCheckboxChange(tag, event.target.checked)
+                }
+                label={tag}
+                labelFor={tag}
+              />
+            ))}
+          </Styled.CheckboxList>
           <Button onClick={handleSearch}>Search</Button>
         </Styled.SearchWrapper>
 

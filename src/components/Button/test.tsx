@@ -29,4 +29,17 @@ describe('<Button />', () => {
       width: '100%'
     })
   })
+
+  it('should render the button as a link', () => {
+    renderWithTheme(
+      <Button as="a" href="/">
+        View details
+      </Button>
+    )
+
+    expect(screen.getByRole('link', { name: /View details/i })).toHaveAttribute(
+      'href',
+      '/'
+    )
+  })
 })

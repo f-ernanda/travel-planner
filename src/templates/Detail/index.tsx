@@ -47,10 +47,9 @@ export default function Detail({ $id }: DetailProps) {
           const placeName = placeData.place.name
 
           const flightsResponse = await fetch(
-            `/api/flights?place=${encodeURIComponent(placeName)}`
+            `/api/flights/?place=${encodeURIComponent(placeName)}`
           )
           if (!flightsResponse.ok) {
-            console.log(flightsResponse)
             throw new Error('Failed to fetch flights. Please try again later.')
           }
           const flightsData = await flightsResponse.json()
@@ -58,10 +57,9 @@ export default function Detail({ $id }: DetailProps) {
           setIsFlightBannerLoaded(true)
 
           const hotelsResponse = await fetch(
-            `/api/hotels?place=${encodeURIComponent(placeName)}`
+            `/api/hotels/?place=${encodeURIComponent(placeName)}`
           )
           if (!hotelsResponse.ok) {
-            console.log(hotelsResponse)
             throw new Error('Failed to fetch hotels. Please try again later.')
           }
           const hotelsData = await hotelsResponse.json()

@@ -1,15 +1,24 @@
-import { render, screen } from '@testing-library/react'
+import { screen } from '@testing-library/react'
+import { renderWithTheme } from '@/utils/test-utils'
 
 import Highlight from '.'
 
+const props = {
+  $img: '/img/stockholm.jpg',
+  $title: 'Stockholm',
+  $subtitle: 'Sweden',
+  $tags: ['Charming', 'History', 'Architecture', 'Museums']
+}
+
 describe('<Highlight />', () => {
-  it('should render the heading', () => {
-    const { container } = render(<Highlight />)
+  it('should render the highlight correctly', () => {
+    renderWithTheme(<Highlight {...props} />)
 
     expect(
-      screen.getByRole('heading', { name: /Highlight/i })
+      screen.getByRole('heading', { name: /Stockholm/i })
     ).toBeInTheDocument()
-
-    expect(container.firstChild).toMatchSnapshot()
+    expect(screen.getByRole('img', { name: /Stockholm/i })).toHaveAttribute(
+      'src'
+    )
   })
 })

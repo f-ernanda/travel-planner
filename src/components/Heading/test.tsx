@@ -27,4 +27,11 @@ describe('<Heading />', () => {
       'border-left': '0.4rem solid #0D8C84'
     })
   })
+
+  it('should render a dark color heading when prop is set', () => {
+    renderWithTheme(<Heading $color="dark">Travel Ease</Heading>)
+    expect(screen.getByRole('heading', { name: /Travel Ease/i })).toHaveStyle({
+      color: '#151C1B'
+    })
+  })
 })

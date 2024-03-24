@@ -3,7 +3,7 @@
 import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.article`
   ${({ theme }) => css`
     background: ${theme.colors.white};
     border-radius: ${theme.borders.radius};

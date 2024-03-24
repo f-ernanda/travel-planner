@@ -1,13 +1,23 @@
-import { render, screen } from '@testing-library/react'
+import { screen, waitFor } from '@testing-library/react'
+import { renderWithTheme } from '@/utils/test-utils'
 
 import Detail from '.'
 
+const SECONDS = 1000
+
 describe('<Detail />', () => {
-  it('should render the heading', () => {
-    const { container } = render(<Detail />)
+  it(
+    'should render the page correctly',
+    async () => {
+      const { container } = renderWithTheme(<Detail $id="1" />)
 
-    expect(screen.getByRole('heading', { name: /Detail/i })).toBeInTheDocument()
-
-    expect(container.firstChild).toMatchSnapshot()
-  })
+      await waitFor(() => {
+        expect(
+          screen.getByRole('heading', { name: 'Stockholm' })
+        ).toBeInTheDocument()
+        expect(container.firstChild).toMatchSnapshot()
+      })
+    },
+    5 * SECONDS
+  )
 })

@@ -1,19 +1,15 @@
-import { fireEvent, screen, waitFor } from '@testing-library/react'
+import { screen } from '@testing-library/react'
 import { renderWithTheme } from '@/utils/test-utils'
 
 import Main from '.'
 
+// const SECONDS = 1000
+
 describe('<Main />', () => {
-  it('should render the menu and footer', () => {
-    renderWithTheme(<Main />)
+  it('should render the page correctly', async () => {
+    const { container } = renderWithTheme(<Main />)
 
-    window.innerWidth = 1000
-    fireEvent(window, new Event('resize'))
-
-    waitFor(() => {
-      expect(screen.getByRole('navigation')).toBeInTheDocument()
-      expect(screen.getByText(/©/i, { exact: false })).toBeInTheDocument()
-    })
+    expect(container.firstChild).toMatchSnapshot()
   })
 
   it('should render the search section', () => {

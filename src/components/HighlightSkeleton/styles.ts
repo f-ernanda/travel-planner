@@ -64,7 +64,7 @@ export const TitleWrapper = styled.div`
   `}
 `
 
-export const List = styled.ul`
+export const List = styled.div`
   ${({ theme }) => css`
     animation: skeleton-loading 1s linear infinite alternate;
     border-radius: ${theme.borders.radius};

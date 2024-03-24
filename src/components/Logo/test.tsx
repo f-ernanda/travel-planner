@@ -37,4 +37,12 @@ describe('<Logo />', () => {
       media: '(min-width:  768px)'
     })
   })
+
+  it('should render a dark color text when prop is set', () => {
+    renderWithTheme(<Logo $textColor="dark" />)
+
+    expect(screen.getByLabelText(/Travel Ease/i).parentElement).toHaveStyle({
+      color: '#151C1B'
+    })
+  })
 })

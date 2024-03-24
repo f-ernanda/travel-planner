@@ -1,13 +1,12 @@
-import { render, screen } from '@testing-library/react'
+import { screen } from '@testing-library/react'
+import { renderWithTheme } from '@/utils/test-utils'
 
-import Banner from '.'
+import BannerSkeleton from '.'
 
-describe('<Banner />', () => {
-  it('should render the heading', () => {
-    const { container } = render(<Banner />)
+describe('<BannerSkeleton />', () => {
+  it('should render the skeleton correctly', () => {
+    renderWithTheme(<BannerSkeleton />)
 
-    expect(screen.getByRole('heading', { name: /Banner/i })).toBeInTheDocument()
-
-    expect(container.firstChild).toMatchSnapshot()
+    expect(screen.getByRole('article', { hidden: true })).toBeInTheDocument()
   })
 })

@@ -9,7 +9,7 @@ export type TravelCardProps = {
   $hotel: string
   $flightPrice: string
   $hotelPrice: string
-  href: string
+  href?: string
 }
 
 const TravelCard = ({
@@ -19,7 +19,7 @@ const TravelCard = ({
   $hotel,
   $flightPrice,
   $hotelPrice,
-  href
+  href = '/'
 }: TravelCardProps) => (
   <Styled.Wrapper>
     <Styled.ImageBox>

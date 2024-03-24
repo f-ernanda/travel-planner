@@ -37,7 +37,7 @@ const SignInForm = () => {
 
   return (
     <Styled.Wrapper>
-      <form onSubmit={handleSubmit}>
+      <form aria-label="form" onSubmit={handleSubmit}>
         <TextField
           label="Email"
           labelFor="Email"

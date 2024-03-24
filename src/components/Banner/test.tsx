@@ -3,22 +3,19 @@ import { renderWithTheme } from '@/utils/test-utils'
 
 import Banner from '.'
 
+const props = {
+  $title: 'Banner',
+  $iconInfo: 'Info',
+  $priceValue: '800'
+}
+
 describe('<Banner />', () => {
   it('should render the banner correctly', () => {
-    renderWithTheme(
-      <Banner $title="Banner" $iconInfo="Info" $priceValue="$800" />
-    )
+    renderWithTheme(<Banner {...props} />)
 
     expect(screen.getByRole('heading', { name: /Banner/i })).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: /Banner/i })).toBeInTheDocument()
-  })
-
-  it('should render the banner with an icon', () => {
-    renderWithTheme(
-      <Banner $title="Banner" $iconInfo="Info" $priceValue="$800" />
-    )
-
-    expect(screen.getByRole('heading', { name: /Banner/i })).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: /Banner/i })).toBeInTheDocument()
+    expect(
+      screen.getByRole('button', { name: /Book now/i })
+    ).toBeInTheDocument()
   })
 })

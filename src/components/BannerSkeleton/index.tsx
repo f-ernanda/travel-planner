@@ -6,7 +6,7 @@ type BannerSkeletonProps = {
 
 const BannerSkeleton = ({ $count = 1 }: BannerSkeletonProps) => {
   const skeletons = Array.from({ length: $count }).map((_, index) => (
-    <Styled.Wrapper key={index}>
+    <Styled.Wrapper key={index} aria-hidden>
       <Styled.Heading />
       <Styled.IconWrapper />
       <Styled.Footer />

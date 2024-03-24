@@ -36,6 +36,7 @@ const TextField = ({
           type="text"
           onChange={onChange}
           value={value}
+          disabled={disabled}
           {...props}
         ></Styled.Input>
       </Styled.InputWrapper>

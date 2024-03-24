@@ -38,6 +38,14 @@ export const SearchWrapper = styled.section`
   `}
 `
 
+export const CheckboxList = styled.div`
+  ${({ theme }) => css`
+    display: grid;
+    grid-template-columns: minmax(min-content, auto) minmax(min-content, auto);
+    gap: ${theme.grid.gutter};
+  `}
+`
+
 export const TravelList = styled.section`
   ${({ theme }) => css`
     display: flex;

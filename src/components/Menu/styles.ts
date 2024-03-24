@@ -139,12 +139,3 @@ export const AuthenticationPanel = styled.div`
     `}
   `}
 `
-
-export const SignUpLink = styled.a`
-  ${({ theme }) => css`
-    border-bottom: 0.2rem solid ${theme.colors.primary};
-    color: ${theme.colors.primary};
-    font-size: ${theme.fonts.sizes.regular};
-    text-decoration: none;
-  `}
-`

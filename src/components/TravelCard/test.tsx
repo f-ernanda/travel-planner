@@ -4,13 +4,12 @@ import { renderWithTheme } from '@/utils/test-utils'
 import TravelCard from '.'
 
 const props = {
-  $img: '/img/mariaberget.jpg',
-  $title: 'Mariaberget',
+  $img: '/img/stockholm.jpg',
+  $title: 'Stockholm',
   $flight: '1+ stops',
   $flightPrice: '$374',
   $hotel: '3 starts',
-  $hotelPrice: '$81',
-  href: '/'
+  $hotelPrice: '$81'
 }
 
 describe('<TravelCard />', () => {
@@ -18,9 +17,9 @@ describe('<TravelCard />', () => {
     renderWithTheme(<TravelCard {...props} />)
 
     expect(
-      screen.getByRole('heading', { name: props.$title })
+      screen.getByRole('heading', { name: /Stockholm/i })
     ).toBeInTheDocument()
 
-    expect(screen.getByRole('img', { name: props.$title })).toBeInTheDocument()
+    expect(screen.getByRole('img', { name: /Stockholm/i })).toBeInTheDocument()
   })
 })
