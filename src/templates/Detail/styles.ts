@@ -39,13 +39,13 @@ export const BannerWrapper = styled.div`
     gap: ${theme.grid.gutter};
     justify-content: center;
 
+    & > * {
+      max-width: 60%;
+      width: 100%;
+    }
+
     ${media.lessThan('large')`
       flex-direction: column;
-
-      & > * {
-        max-width: 60%;
-        width: 100%;
-      }
     `}
 
     ${media.greaterThan('large')`

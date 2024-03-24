@@ -16,7 +16,7 @@ export const Wrapper = styled.article`
       'price button';
     grid-template-rows: repeat(2, 1fr) auto;
     padding: ${theme.spacings.regular} ${theme.spacings.small};
-    max-width: 30rem;
+    max-width: 35rem;
 
     > *:first-child {
       grid-area: title;

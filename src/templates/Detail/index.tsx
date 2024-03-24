@@ -72,7 +72,6 @@ export default function Detail({ $id }: DetailProps) {
         console.error('Error occurred during details fetch:', error)
       }
     }
-
     fetchDetails()
   }, [$id])
 

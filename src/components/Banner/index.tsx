@@ -4,7 +4,7 @@ import * as Styled from './styles'
 
 type BannerProps = {
   $title: string
-  $icon: React.ReactNode
+  $icon?: React.ReactNode
   $iconInfo: string
   $priceValue: string
 }
