@@ -108,9 +108,9 @@ export const MenuLink = styled.a`
 
     &:hover {
       &::after {
-        content: '';
         animation: onHover 0.3s forwards;
         background-color: ${theme.colors.primary};
+        content: '';
         display: block;
         position: absolute;
         height: 0.4rem;

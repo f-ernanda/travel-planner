@@ -3,25 +3,23 @@
 import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.article`
   ${({ theme }) => css`
-    background: ${theme.colors.white};
+    background-color: ${theme.colors.white};
     border-radius: ${theme.borders.radius};
-    display: grid;
-    gap: ${theme.grid.gutter};
-    grid-template-areas:
-      'img'
-      'title'
-      'info';
-    width: 100%;
+    height: 50rem;
+    padding: ${theme.spacings.regular} ${theme.spacings.small};
 
     ${media.greaterThan('medium')`
-      grid-template-columns: 1fr repeat(2, 1fr);
+      align-items: center;
+      display: grid;
+      gap: ${theme.spacings.regular};
       grid-template-areas:
-        'img title title'
-        'img info info';
-      min-width: 60rem;
-    `}
+        'img img'
+        'title list';
+      grid-template-columns: 1fr 2fr;
+      height: 70rem;
+    `};
 
     @keyframes skeleton-loading {
       0% {
@@ -37,46 +35,45 @@ export const Wrapper = styled.div`
 export const ImageBox = styled.div`
   ${({ theme }) => css`
     animation: skeleton-loading 1s linear infinite alternate;
-    border-radius: ${theme.borders.radius} ${theme.borders.radius} 0 0;
-    grid-area: img;
-    height: 20rem;
+    border-radius: ${theme.borders.radius};
+    height: 30rem;
 
     ${media.greaterThan('medium')`
-      border-radius: ${theme.borders.radius} 0 0 ${theme.borders.radius};
-    `}
+      grid-area: img;
+      height: 50rem;
+      place-self: stretch;
+    `};
   `}
 `
 
-export const Heading = styled.div`
+export const TitleWrapper = styled.div`
   ${({ theme }) => css`
     animation: skeleton-loading 1s linear infinite alternate;
     border-radius: ${theme.borders.radius};
-    grid-area: title;
-    height: 4rem;
-    margin: ${theme.spacings.small};
-    place-self: stretch;
+    height: 3rem;
 
     ${media.lessThan('medium')`
-      margin-bottom: 0;
-    `}
+      margin-block: ${theme.spacings.regular}
+    `};
 
     ${media.greaterThan('medium')`
-      margin-left: 0;
-    `}
+      grid-area: title;
+      height: 10rem;
+      place-self: stretch;
+    `};
   `}
 `
 
-export const TravelWrapper = styled.div`
+export const List = styled.ul`
   ${({ theme }) => css`
     animation: skeleton-loading 1s linear infinite alternate;
     border-radius: ${theme.borders.radius};
-    grid-area: info;
-    height: 7rem;
-    margin: ${theme.spacings.small};
-    place-self: stretch;
+    height: 5rem;
 
     ${media.greaterThan('medium')`
-      margin-left: 0;
-    `}
+      grid-area: list;
+      height: 10rem;
+      place-self: stretch;
+    `};
   `}
 `

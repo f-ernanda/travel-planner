@@ -1,19 +1,19 @@
 import * as Styled from './styles'
 
-type TravelCardSkeletonProps = {
+type BannerSkeletonProps = {
   $count?: number
 }
 
-const TravelCardSkeleton = ({ $count = 1 }: TravelCardSkeletonProps) => {
+const BannerSkeleton = ({ $count = 1 }: BannerSkeletonProps) => {
   const skeletons = Array.from({ length: $count }).map((_, index) => (
     <Styled.Wrapper key={index}>
-      <Styled.ImageBox />
       <Styled.Heading />
-      <Styled.TravelWrapper />
+      <Styled.IconWrapper />
+      <Styled.Footer />
     </Styled.Wrapper>
   ))
 
   return <>{skeletons}</>
 }
 
-export default TravelCardSkeleton
+export default BannerSkeleton

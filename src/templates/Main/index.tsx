@@ -63,7 +63,7 @@ const Main = () => {
   return (
     <Base>
       <Styled.Wrapper>
-        <Styled.SearchContainer>
+        <Styled.SearchWrapper>
           <Heading $withVerticalLine>Describe your next trip</Heading>
           <CheckboxList
             $tags={TAGS}
@@ -71,7 +71,7 @@ const Main = () => {
             onChange={handleCheckboxChange}
           />
           <Button onClick={handleSearch}>Search</Button>
-        </Styled.SearchContainer>
+        </Styled.SearchWrapper>
 
         <Styled.TravelList>
           <Heading $withVerticalLine>Your results</Heading>
@@ -84,7 +84,7 @@ const Main = () => {
               $title={result.place.name}
               $flight={
                 result.bestFlight
-                  ? `${result.bestFlight.stops} stops`
+                  ? `${result.bestFlight.stops} stop(s)`
                   : 'No available flights'
               }
               $flightPrice={

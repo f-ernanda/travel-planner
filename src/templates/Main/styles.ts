@@ -3,14 +3,13 @@
 import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
-export const Wrapper = styled.main`
+export const Wrapper = styled.div`
   ${({ theme }) => css`
     ${media.greaterThan('medium')`
         display: grid;
         gap: ${theme.grid.gutter};
         grid-template-areas: 'search list';
         grid-template-columns: minmax(1fr, 50rem) minmax(2fr, auto);
-        grid-template-rows: 25rem auto 1fr;
     `}
 
     @media (768px <= width <= 1200px) {
@@ -22,7 +21,7 @@ export const Wrapper = styled.main`
   `}
 `
 
-export const SearchContainer = styled.section`
+export const SearchWrapper = styled.section`
   ${({ theme }) => css`
     display: flex;
     flex-direction: column;

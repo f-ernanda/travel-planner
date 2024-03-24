@@ -8,17 +8,6 @@ export const Wrapper = styled.div`
   ${({ theme }) => css`
     min-height: 100vh;
 
-    & > * {
-      display: grid;
-      gap: ${theme.grid.gutter};
-      grid-template-areas:
-        'menu'
-        'content'
-        'footer';
-      grid-template-rows: 25rem auto 1fr;
-      min-height: 100vh;
-    }
-
     ${media.lessThan('medium')`
         background-color: ${theme.colors.bg};
     `}
@@ -26,10 +15,11 @@ export const Wrapper = styled.div`
     ${media.greaterThan('medium')`
       position: relative;
       z-index: 0;
+
       &::after {
         background-color: ${theme.colors.bg};
         bottom: 0;
-        clip-path: polygon(100% 0, 100% 100%, 75% 100%, 0 57%, 0 0);
+        clip-path: polygon(100% 0, 100% 100%, 65% 100%, 0 65%, 0 0);
         content: '';
         left: 0;
         position: absolute;
@@ -39,26 +29,39 @@ export const Wrapper = styled.div`
       }
 
       & > * {
+        display: grid;
+        gap: ${theme.grid.gutter};
+        grid-template-areas:
+          'menu'
+          'content'
+          'footer';
         grid-template-columns: minmax(1fr, 50rem) minmax(2fr, auto);
+        grid-template-rows: 25rem minmax(auto, max-content) 1fr;
+        min-height: 100vh;
       }
-    `}
+    `};
   `}
 `
 
-export const MenuContainer = styled.section`
+export const MenuWrapper = styled.section`
   ${({ theme }) => css`
-    grid-area: menu;
     margin-bottom: ${theme.spacings.large};
 
     ${media.greaterThan('medium')`
+      grid-area: menu;
       margin-top: ${theme.spacings.small};
     `}
   `}
 `
 
-export const FooterContainer = styled.section`
-  align-self: end;
-  grid-area: footer;
+export const FooterWrapper = styled.section`
+  ${media.lessThan('medium')`
+        margin-top: auto;
+    `}
+  ${media.greaterThan('medium')`
+    align-self: end;
+    grid-area: footer;
+  `}
 `
 
 const contentModifiers = {
@@ -72,8 +75,11 @@ const contentModifiers = {
 
 export const Content = styled.main<BaseTemplateProps>`
   ${({ $withFlex }) => css`
-    align-self: center;
-    grid-area: content;
+    ${media.greaterThan('medium')`
+      align-self: center;
+      grid-area: content;
+    `}
+
     ${$withFlex && contentModifiers.withFlex}
   `}
 `

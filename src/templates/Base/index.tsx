@@ -14,13 +14,13 @@ const Base = ({ $withFlex = false, children }: BaseTemplateProps) => {
   return (
     <Styled.Wrapper>
       <Container>
-        <Styled.MenuContainer>
+        <Styled.MenuWrapper>
           <Menu />
-        </Styled.MenuContainer>
+        </Styled.MenuWrapper>
         <Styled.Content $withFlex={$withFlex}>{children}</Styled.Content>
-        <Styled.FooterContainer>
+        <Styled.FooterWrapper>
           <Footer />
-        </Styled.FooterContainer>
+        </Styled.FooterWrapper>
       </Container>
     </Styled.Wrapper>
   )

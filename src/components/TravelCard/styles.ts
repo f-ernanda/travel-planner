@@ -79,7 +79,7 @@ export const ImageItem = styled(Image)`
   `}
 `
 
-export const TravelContainer = styled.div`
+export const TravelWrapper = styled.div`
   ${({ theme }) => css`
     margin-top: ${theme.spacings.small};
     padding: ${theme.spacings.tiny};

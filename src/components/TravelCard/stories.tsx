@@ -5,8 +5,8 @@ export default {
   title: 'TravelCard',
   component: TravelCard,
   args: {
-    $img: '/img/mariaberget.jpg',
-    $title: 'Mariaberget',
+    $img: '/img/stockholm.jpg',
+    $title: 'Stockholm',
     $flight: '1+ stops',
     $flightPrice: '$374',
     $hotel: '3 starts',
