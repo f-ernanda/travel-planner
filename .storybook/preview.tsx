@@ -22,6 +22,10 @@ const preview: Preview = {
         {
           name: 'primary',
           value: theme.colors.primaryAlpha
+        },
+        {
+          name: 'gray',
+          value: theme.colors.lightGray
         }
       ]
     },

@@ -19,6 +19,6 @@ Default.args = {
 
 Default.parameters = {
   backgrounds: {
-    default: 'primary'
+    default: 'gray'
   }
 }

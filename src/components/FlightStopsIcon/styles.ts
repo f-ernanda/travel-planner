@@ -9,7 +9,9 @@ export const Wrapper = styled.div`
     justify-content: center;
 
     > * {
+      color: ${theme.colors.primary};
       flex: 0 0 100%;
+      max-width: 4.8rem;
     }
   `}
 `

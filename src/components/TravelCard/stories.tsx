@@ -10,8 +10,7 @@ export default {
     $flight: '1+ stops',
     $flightPrice: '$374',
     $hotel: '3 starts',
-    $hotelPrice: '$81',
-    href: '/'
+    $hotelPrice: '$81'
   }
 } as Meta
 

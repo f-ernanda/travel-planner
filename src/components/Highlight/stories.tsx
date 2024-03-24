@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react'
 import Highlight from '.'
 
-const tags = ['Charming', 'Foodie', 'Nightlife', 'Architecture', 'History']
+const tags = ['Charming', 'Foodie', 'Nightlife', 'Architecture']
 
 export default {
   title: 'Highlight',

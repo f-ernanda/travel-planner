@@ -1,11 +1,16 @@
 'use client'
 
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const Wrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  > * {
-    flex: 0 0 100%;
-  }
+  ${({ theme }) => css`
+    display: flex;
+    justify-content: center;
+
+    > * {
+      color: ${theme.colors.primary};
+      flex: 0 0 100%;
+      max-width: 4.8rem;
+    }
+  `}
 `
