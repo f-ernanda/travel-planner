@@ -1,6 +1,7 @@
 import * as Styled from './styles'
 import Heading from '@/components/Heading'
 import Button from '@/components/Button'
+import Link from 'next/link'
 
 export type TravelCardProps = {
   $img: string
@@ -46,7 +47,7 @@ const TravelCard = ({
       </Styled.TravelItem>
     </Styled.TravelWrapper>
 
-    <Button as="a" href={href}>
+    <Button as={Link} href={href}>
       View details
     </Button>
   </Styled.Wrapper>

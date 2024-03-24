@@ -8,6 +8,7 @@ import * as Styled from './styles'
 import { MediaWrapper } from '@/utils/media-utils'
 import Button from '@/components/Button'
 import Logo from '@/components/Logo'
+import Link from 'next/link'
 
 export type MenuProps = {
   $username?: string
@@ -20,7 +21,9 @@ const Menu = ({ $username }: MenuProps) => {
     <Styled.Wrapper>
       <MediaWrapper $lessThan="medium">
         <Styled.MenuWrapper>
-          <Logo $size="large" />
+          <Link href="/">
+            <Logo $size="large" />
+          </Link>
           <Styled.IconWrapper>
             <MenuIcon aria-label="Open menu" onClick={() => setIsOpen(true)} />
           </Styled.IconWrapper>
@@ -43,7 +46,7 @@ const Menu = ({ $username }: MenuProps) => {
           </Styled.MenuList>
           {!$username && (
             <Styled.AuthenticationPanel>
-              <Button as={'a'} $fullWidth href="/sign-in">
+              <Button as={Link} $fullWidth href="/sign-in">
                 Log in
               </Button>
             </Styled.AuthenticationPanel>
@@ -53,7 +56,9 @@ const Menu = ({ $username }: MenuProps) => {
 
       <MediaWrapper $greaterThan="medium">
         <Styled.MenuWrapper>
-          <Logo $size="large" />
+          <Link href="/">
+            <Logo $size="large" />{' '}
+          </Link>
           <Styled.MenuList>
             <Styled.MenuLink href="/">Home</Styled.MenuLink>
             {$username && (
@@ -63,7 +68,7 @@ const Menu = ({ $username }: MenuProps) => {
             )}
             {!$username && (
               <Styled.AuthenticationPanel>
-                <Button as={'a'} href="/sign-in">
+                <Button as={Link} href="/sign-in">
                   Log in
                 </Button>
               </Styled.AuthenticationPanel>
