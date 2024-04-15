@@ -19,7 +19,7 @@
     "@prisma/client": "^5.11.0",
     "@styled-icons/material-rounded": "^10.47.0",
     "joi": "^17.12.2",
-    "next": "14.1.2",
+    "next": "14.2.1",
     "next-auth": "^4.24.7",
     "prisma": "^5.11.0",
     "react": "^18",
