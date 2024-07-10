@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@auth/prisma-adapter": "^1.5.0",
-    "@prisma/client": "^5.11.0",
+    "@prisma/client": "^5.16.2",
     "@styled-icons/material-rounded": "^10.47.0",
     "joi": "^17.12.2",
     "next": "14.2.3",
