@@ -17,6 +17,7 @@ The original problem statement and requirements provided for the exercise can be
 ## 🔍 Focus of the project
 
 Rather than feature completeness, this project was designed to showcase how I:
+
 - Break down product requirements
 - Structure a frontend application
 - Document technical decisions and trade-offs
@@ -28,6 +29,7 @@ Some features and roadmap items were intentionally speculative, serving as a way
 ## 🎨 Implemented features
 
 Within the scope of the exercise, the project includes:
+
 - A Next.js-based frontend application
 - Activity-based destination exploration
 - Mock data for flights and hotels
@@ -39,6 +41,7 @@ The implementation prioritizes clarity and structure over production-level compl
 ## 🛠️ Architecture & tooling
 
 This project uses a modern frontend and tooling stack, including:
+
 - Next.js
 - React
 - Styled Components
@@ -48,7 +51,7 @@ This project uses a modern frontend and tooling stack, including:
 - GitHub Actions for CI
 - Terraform for infrastructure exploration
 
-The infrastructure and CI/CD setup were included to align with the exercise requirements and to demonstrate how I would approach real-world deployment scenarios, even though this project itself is not intended to be maintained or deployed long-term.
+The infrastructure and CI/CD setup were included to align with the exercise requirements and to demonstrate how I would approach real-world deployment scenarios.
 
 ## 📋 Documentation context
 
@@ -61,13 +64,12 @@ This repository contains additional documentation created as part of the coding 
 
 These documents were written to demonstrate reasoning, trade-offs, and planning skills during the interview process.
 
-They should be read as design and thought exercises, not as an active or future development plan.
-
 ## 🎯 What I learned
 
 Working on this project helped me consolidate my approach to technical challenges under real-world constraints.
 
 In particular, I learned a lot about:
+
 - Translating open-ended requirements into a structured solution
 - Balancing implementation with documentation
 - Making architectural decisions explicit, even when they are speculative
