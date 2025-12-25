@@ -14,7 +14,7 @@ The application explores how a travel planner could recommend destinations based
 
 The original problem statement and requirements provided for the exercise can be found in the [requirements](./docs/requirements.md) file.
 
-## 🔍 Project focus
+## 🔍 Focus of the project
 
 Rather than feature completeness, this project was designed to showcase how I:
 - Break down product requirements
@@ -25,7 +25,7 @@ Rather than feature completeness, this project was designed to showcase how I:
 
 Some features and roadmap items were intentionally speculative, serving as a way to express design reasoning, not concrete implementation plans.
 
-## 🧭 Implemented scope
+## 🎨 Implemented features
 
 Within the scope of the exercise, the project includes:
 - A Next.js-based frontend application
@@ -36,7 +36,7 @@ Within the scope of the exercise, the project includes:
 
 The implementation prioritizes clarity and structure over production-level completeness.
 
-## 📐 Architecture & tooling
+## 🛠️ Architecture & tooling
 
 This project uses a modern frontend and tooling stack, including:
 - Next.js
@@ -50,7 +50,7 @@ This project uses a modern frontend and tooling stack, including:
 
 The infrastructure and CI/CD setup were included to align with the exercise requirements and to demonstrate how I would approach real-world deployment scenarios, even though this project itself is not intended to be maintained or deployed long-term.
 
-## 📋 About the documentation
+## 📋 Documentation context
 
 For historical context, the [original README](./docs/README-original.md) written during the interview exercise is preserved in the `docs/` folder.
 
