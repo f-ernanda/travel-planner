@@ -8,16 +8,15 @@ A travel planning application created as part of a technical assessment.
 
 Travel Ease was developed as part of a **DevEx Engineer** coding exercise during a job interview process.
 
-The main goal of this project was not to ship a fully-featured product, but to demonstrate how I approach problem-solving, architectural decisions, and technical documentation.
+The primary goal of this project was not to ship a fully featured product, but to demonstrate how I approach problem-solving, architectural decisions, and technical documentation.
 
 The application explores how a travel planner could recommend destinations based on user preferences (such as activities), while also suggesting flight and hotel options based on pricing.
 
 The original problem statement and requirements provided for the exercise can be found in the [requirements](./docs/requirements.md) file.
 
-## 🔍 What this project focuses on
+## 🔍 Project focus
 
 Rather than feature completeness, this project was designed to showcase how I:
-
 - Break down product requirements
 - Structure a frontend application
 - Document technical decisions and trade-offs
@@ -29,7 +28,6 @@ Some features and roadmap items were intentionally speculative, serving as a way
 ## 🧭 Implemented scope
 
 Within the scope of the exercise, the project includes:
-
 - A Next.js-based frontend application
 - Activity-based destination exploration
 - Mock data for flights and hotels
@@ -41,7 +39,6 @@ The implementation prioritizes clarity and structure over production-level compl
 ## 📐 Architecture & tooling
 
 This project uses a modern frontend and tooling stack, including:
-
 - Next.js
 - React
 - Styled Components
@@ -65,6 +62,18 @@ This repository contains additional documentation created as part of the coding 
 These documents were written to demonstrate reasoning, trade-offs, and planning skills during the interview process.
 
 They should be read as design and thought exercises, not as an active or future development plan.
+
+## 🎯 What I learned
+
+Working on this project helped me consolidate my approach to technical challenges under real-world constraints.
+
+In particular, I learned a lot about:
+- Translating open-ended requirements into a structured solution
+- Balancing implementation with documentation
+- Making architectural decisions explicit, even when they are speculative
+- Communicating trade-offs and future possibilities clearly
+
+This project was especially valuable as an exercise in thinking through a system holistically, beyond just writing code.
 
 ## 🌟 Current state
 
