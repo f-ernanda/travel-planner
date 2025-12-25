@@ -12,17 +12,17 @@ The main goal of this project was not to ship a fully-featured product, but to d
 
 The application explores how a travel planner could recommend destinations based on user preferences (such as activities), while also suggesting flight and hotel options based on pricing.
 
-The original problem statement and requirements provided for the exercise can be found in the `docs/requirements.md` file.
+The original problem statement and requirements provided for the exercise can be found in the [requirements](./docs/requirements.md) file.
 
 ## 🔍 What this project focuses on
 
-Rather than feature completeness, this project was designed to showcase:
+Rather than feature completeness, this project was designed to showcase how I:
 
-- how I break down product requirements
-- how I structure a frontend application
-- how I document technical decisions and trade-offs
-- how I think about scalability and future extensions
-- how I communicate ideas through code and documentation
+- Break down product requirements
+- Structure a frontend application
+- Document technical decisions and trade-offs
+- Think about scalability and future extensions
+- Communicate ideas through code and documentation
 
 Some features and roadmap items were intentionally speculative, serving as a way to express design reasoning, not concrete implementation plans.
 
@@ -30,11 +30,11 @@ Some features and roadmap items were intentionally speculative, serving as a way
 
 Within the scope of the exercise, the project includes:
 
-- a Next.js-based frontend application
-- activity-based destination exploration
-- mock data for flights and hotels
-- basic recommendation logic
-- a structured and documented codebase
+- A Next.js-based frontend application
+- Activity-based destination exploration
+- Mock data for flights and hotels
+- Basic recommendation logic
+- A structured and documented codebase
 
 The implementation prioritizes clarity and structure over production-level completeness.
 
@@ -55,12 +55,12 @@ The infrastructure and CI/CD setup were included to align with the exercise requ
 
 ## 📋 About the documentation
 
-For historical context, the original README written during the interview exercise is preserved in the `docs/` folder.
+For historical context, the [original README](./docs/README-original.md) written during the interview exercise is preserved in the `docs/` folder.
 
 This repository contains additional documentation created as part of the coding exercise, including:
 
-- a technical roadmap
-- planning notes
+- [technical roadmap](./docs/technical-roadmap.md)
+- [planning notes](./docs/planning.md)
 
 These documents were written to demonstrate reasoning, trade-offs, and planning skills during the interview process.
 
