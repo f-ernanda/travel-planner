@@ -1,8 +1,9 @@
 > This document is the original README written specifically for the coding exercise.
 > It reflects the scope, expectations, and documentation style required during the evaluation process.
->
 > It is kept here for historical and contextual reference.
 > For the current project overview, see the README at the root of the repository.
+
+---
 
 <p align="center">
   <a alt="Travel Ease logo" href="#"><img src="./img/logo.svg" width="200px"></a>
