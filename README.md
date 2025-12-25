@@ -59,8 +59,8 @@ For historical context, the [original README](./docs/README-original.md) written
 
 This repository contains additional documentation created as part of the coding exercise, including:
 
-- [technical roadmap](./docs/technical-roadmap.md)
-- [planning notes](./docs/planning.md)
+- [Technical roadmap](./docs/technical-roadmap.md)
+- [Planning notes](./docs/planning.md)
 
 These documents were written to demonstrate reasoning, trade-offs, and planning skills during the interview process.
 
