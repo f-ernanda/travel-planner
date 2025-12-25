@@ -1,202 +1,80 @@
-<p align="center">
-  <a alt="Travel Ease logo" href="#"><img src="./docs/img/logo.svg"  width="200px"></a>
-</p>
+# Travel Ease
 
-<h1 align="center">Travel Ease</h1>
-<p align="center">The easiest way to plan your travel!</p>
-<br>
+A travel planning application created as part of a technical assessment.
 
-<p align="center">
-  <!-- build -->
-  <img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/f-ernanda/travel-planner/.github%2Fworkflows%2Fmain_sastravelplanner.yml">
-  <!-- release -->
-  <img alt="GitHub Release" src="https://img.shields.io/github/v/release/f-ernanda/travel-planner">
-  <!-- license -->
-  <img alt="License" src="https://img.shields.io/github/license/f-ernanda/travel-planner?color=cb4c83">
-  <!-- commits per month -->
-  <img alt="Commits per month" src="https://img.shields.io/github/commit-activity/m/f-ernanda/travel-planner?color=574ccb">
-  <!-- languages -->
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/f-ernanda/travel-planner?color=CB504C">
-  <!-- top language-->
-  <img alt="Top language" src="https://img.shields.io/github/languages/top/f-ernanda/travel-planner?color=cb744c">
-</p>
-<br>
-
-<!-- TABLE OF CONTENTS -->
-<p align="center">
-  <a href="#-about-the-project">About the project</a> •
-  <a href="#-features">Features</a> •
-  <a href="#-roadmap">Roadmap</a> •
-  <a href="#-getting-started">Getting started</a> •
-  <a href="#-license">License</a> •
-  <a href="#-tech">Technical documentation</a>
-</p>
+<img src="./docs/img/ui.png" alt="" width="700px">
 
 ## 💻 About the project
 
-[Travel Ease][travelease] is an application that allows users to choose their next travel destination based on activity options. The application recommends the best hotel and flight options based on the lowest price for departure flights and hotel rates per night.
+Travel Ease was developed as part of a **DevEx Engineer** coding exercise during a job interview process.
 
-<img alt="Travel Ease " src="./docs/img/project.png" width="700px">
+The main goal of this project was not to ship a fully-featured product, but to demonstrate how I approach problem-solving, architectural decisions, and technical documentation.
 
-### Built with
+The application explores how a travel planner could recommend destinations based on user preferences (such as activities), while also suggesting flight and hotel options based on pricing.
 
-This project utilizes [Next.js][next] as the primary framework, complemented by essential technologies:
+The original problem statement and requirements provided for the exercise can be found in the `docs/requirements.md` file.
 
-- [Storybook][storybook] for developing the UI components in isolation.
-- [Styled Components][styled] for styling the React components.
-- [Jest][jest] as the chosen testing framework.
-- [React Testing Library][rtl] for testing utilities.
-- [Prisma][prisma] for database access and management.
-- [MongoDB][mongo] as the preferred NoSQL database solution.
-- [Docker][docker] for containerizing the application.
-- [Terraform][terraform] for provisioning the Azure WebApp infrastructure.
-- [GitHub Actions][actions] for CI/CD integration.
+## 🔍 What this project focuses on
 
-## 🎨 Features
+Rather than feature completeness, this project was designed to showcase:
 
-In the version 1 (V1) of the project, it is possible to:
+- how I break down product requirements
+- how I structure a frontend application
+- how I document technical decisions and trade-offs
+- how I think about scalability and future extensions
+- how I communicate ideas through code and documentation
 
-- [x] Search for places based on a list of activities.
-- [x] Get the recommended flight based on the lower price.
-- [x] Get the recommended hotel based on the lower price.
-- [x] See details about the selected place, including available flights and hotels.
-- [x] See details about flight options, including airlines, prices, and connections.
-- [x] See details about the hotel options, including names, prices, and reviews.
+Some features and roadmap items were intentionally speculative, serving as a way to express design reasoning, not concrete implementation plans.
 
-## 🎯 Roadmap
+## 🧭 Implemented scope
 
-### Version 2 (V2)
+Within the scope of the exercise, the project includes:
 
-- **Tag Expansion**: Users will have more tags to broaden search criteria options.
-- **Departure City**: Users will have the option to specify their departure city.
-- **Departure Date**: Users will be able to select their desired departure date.
-- **Currency Selection**: Users will be able to choose their preferred currency for pricing.
-- **Real Data Integration**: Integration with real-world data will enhance the authenticity of information.
-- **Login and Sign-Up Options**: Users will have the convenience of logging in or signing up using Microsoft or Google providers.
+- a Next.js-based frontend application
+- activity-based destination exploration
+- mock data for flights and hotels
+- basic recommendation logic
+- a structured and documented codebase
 
-### Version 3 (V3)
+The implementation prioritizes clarity and structure over production-level completeness.
 
-- **Favorite Places**: Users will have the ability to save their favorite travel destinations.
-- **Home Recommendations**: Recommendations will be provided based on saved favorite places.
-- **Hotel and Flight Filters**:
-  - **Hotel**:
-    - Reviews
-    - Distance from downtown
-    - Breakfast availability
-    - Price range
-    - Amenities
-  - **Flight**:
-    - Number of stops
-    - Cabin class
-    - Airline preference
-    - Departure and arrival times
-    - Baggage allowance
+## 📐 Architecture & tooling
 
-### Version 4 (V4)
+This project uses a modern frontend and tooling stack, including:
 
-- **Login and Registration without Providers**: Users will have the option for custom login and registration directly within the application.
-- **Account Settings**: Users will have access to account settings for managing preferences and personal information.
-- **Round Trip or One-Way Trip**: Users will be able to specify whether their trip is a round trip or one-way.
-- **Expanded Hotel and Flight Filters**: Enhancements will be implemented to offer users more sophisticated filtering options for hotels and flights.
+- Next.js
+- React
+- Styled Components
+- Jest and React Testing Library
+- Prisma and MongoDB (with mocked data)
+- Docker for containerization
+- GitHub Actions for CI
+- Terraform for infrastructure exploration
 
-## 🏁 Getting started
+The infrastructure and CI/CD setup were included to align with the exercise requirements and to demonstrate how I would approach real-world deployment scenarios, even though this project itself is not intended to be maintained or deployed long-term.
 
-### Prerequisites
+## 📋 About the documentation
 
-Before setting up the project locally, ensure you have the following prerequisites ready:
+For historical context, the original README written during the interview exercise is preserved in the `docs/` folder.
 
-1. **Node.js 20+**: Install Node.js version 20 or later. You can download and install Node.js from [here][node].
+This repository contains additional documentation created as part of the coding exercise, including:
 
-2. **MongoDB Database Tools**: Install MongoDB Database Tools to use the same mocked data without issues. Installation instructions can be found [here][mongotools].
+- a technical roadmap
+- planning notes
 
-3. **MongoDB Atlas Account**: Sign up for a MongoDB Atlas account to host the database. You can create an account [here][atlas].
+These documents were written to demonstrate reasoning, trade-offs, and planning skills during the interview process.
 
-If you plan to deploy it on the cloud, you'll need:
+They should be read as design and thought exercises, not as an active or future development plan.
 
-1. **Terraform**: Ensure you have Terraform installed on your machine. If not, you can download and install it from [here][terraformcli].
+## 🌟 Current state
 
-2. **Azure CLI**: Install the Azure CLI to interact with Azure services from the command line. Installation instructions can be found [here][azurecli].
-
-3. **Docker Hub Account**: You'll need a Docker Hub account for containerization. Sign up for an account [here][hub].
-
-4. **Azure Account**: You'll require an Azure account for provisioning resources. Sign up for free [here][azure].
-
-5. **Extra**: You'll need to create and store the necessary secrets and environment variables on your GitHub and update the [GitHub workflow](./.github/workflows/main_sastravelplanner.yml) if necessary. For more information, see [this documentation][secrets].
-
-Once you have all these pieces in place, you can proceed with setting up the project locally.
-
-### Installation
-
-In order to run the project locally, follow these steps:
-
-1. Clone the repository.
-
-```bash
-git clone https://github.com/your-username/project-name.git
-```
-
-Replace `your-username` with your GitHub username and `project-name` with the name of the project.
-
-2. Change into the project directory:
-
-```bash
-cd <project-name>
-```
-
-3. Install the project dependencies using npm:
-
-```bash
-npm install
-```
-
-4. Set up the database:
-
-a. Run Prisma migration to create database schema:
-
-```bash
-npx prisma db push
-```
-
-b. Import mock data into the database (replace `<DATABASE_URL>` and `<collection-name>` accordingly):
-
-```bash
-mongoimport --uri <DATABASE_URL> --collection <collection-name> --drop --file ./src/lib/db/mocks/<collection-name>-data.json
-```
-
-5. View the application
-
-Open your web browser and navigate to `http://localhost:3000` to view the application running locally.
-
-You are now ready to start working on the project locally! 😊
+- Project status: **finished** 🎉
+- Next steps: no planned next steps.
 
 ## 📃 License
 
-Distributed under the MIT License. See [LICENSE](./LICENSE) for more information.
+This project is licensed under the MIT License. See [LICENSE](./LICENSE) for more information.
 
 ---
 
-## 🌟 Technical documentation
-
-For more details about the technical roadmap, see the [technical documentation](./docs/README.md).
-
-<!-- LINKS-->
-
-[travelease]: https://sastravelplanner.azurewebsites.net/
-[next]: https://nextjs.org/
-[storybook]: https://storybook.js.org/
-[styled]: https://styled-components.com/
-[jest]: https://jestjs.io/
-[rtl]: https://testing-library.com/
-[prisma]: https://www.prisma.io/
-[mongo]: https://www.mongodb.com/
-[docker]: https://www.docker.com/
-[terraform]: https://www.terraform.io/
-[actions]: https://docs.github.com/en/actions
-[node]: https://nodejs.org/
-[mongotools]: https://www.mongodb.com/docs/database-tools/
-[atlas]: https://www.mongodb.com/cloud/atlas
-[hub]: https://hub.docker.com/
-[azure]: https://azure.microsoft.com/
-[terraformcli]: https://www.terraform.io/downloads.html
-[azurecli]: https://docs.microsoft.com/en-us/cli/azure/install-azure-cli
-[secrets]: https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions
+🌱
