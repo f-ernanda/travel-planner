@@ -1,86 +1,66 @@
-# Travel Ease
+<h1 align="center">Travel Ease</h1>
+<p align="center">A travel planning application for exploring destinations and finding flight and hotel options.</p>
 
-A travel planning application created as part of a technical assessment.
+<p align="center">
+  <!-- build -->
+  <img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/f-ernanda/travel-planner/ci.yml">
+  <!-- license -->
+  <img alt="License" src="https://img.shields.io/github/license/f-ernanda/travel-planner?color=cb4c83">
+  <!-- languages -->
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/f-ernanda/travel-planner?color=CB504C">
+  <!-- top language-->
+  <img alt="Top language" src="https://img.shields.io/github/languages/top/f-ernanda/travel-planner?color=cb744c">
+</p>
 
-<img src="./docs/img/ui.png" alt="" width="700px">
+<p align="center">
+  <img src="./docs/img/ui.png" alt="" width="700px">
+</p>
+
+<p align="center">
+  <a href="#-about-the-project">About the project</a> •
+  <a href="#-features">Features</a> •
+  <a href="#️-technologies">Technologies</a> •
+  <a href="#-documentation">Documentation</a> •
+  <a href="#-license">License</a>
+</p>
 
 ## 💻 About the project
 
-Travel Ease was developed as part of a **DevEx Engineer** coding exercise during a job interview process.
+Travel Ease is a travel planning application that helps users explore destinations based on their interests and find flight and hotel options.
 
-The primary goal of this project was not to ship a fully featured product, but to demonstrate how I approach problem-solving, architectural decisions, and technical documentation.
+The project was originally developed as part of a DevEx Engineer coding exercise during a job interview process for [SAS](https://www.flysas.com/en). The original requirements are preserved in [docs/requirements.md](./docs/requirements.md).
 
-The application explores how a travel planner could recommend destinations based on user preferences (such as activities), while also suggesting flight and hotel options based on pricing.
+The application uses activity preferences to recommend destinations and provides mock flight and hotel options based on pricing.
 
-The original problem statement and requirements provided for the exercise can be found in the [requirements](./docs/requirements.md) file.
+The project was developed with a focus on application structure, technical decisions, and documentation, rather than production-level feature completeness.
 
-## 🔍 Focus of the project
+## ✨ Features
 
-Rather than feature completeness, this project was designed to showcase how I:
+- Explore destinations based on activities
+- Recommend destinations according to user preferences
+- View available flight options
+- View available hotel options
+- Compare options based on pricing
 
-- Break down product requirements
-- Structure a frontend application
-- Document technical decisions and trade-offs
-- Think about scalability and future extensions
-- Communicate ideas through code and documentation
-
-Some features and roadmap items were intentionally speculative, serving as a way to express design reasoning, not concrete implementation plans.
-
-## 🎨 Implemented features
-
-Within the scope of the exercise, the project includes:
-
-- A Next.js-based frontend application
-- Activity-based destination exploration
-- Mock data for flights and hotels
-- Basic recommendation logic
-- A structured and documented codebase
-
-The implementation prioritizes clarity and structure over production-level completeness.
-
-## 🛠️ Architecture & tooling
-
-This project uses a modern frontend and tooling stack, including:
+## 🛠️ Technologies
 
 - Next.js
 - React
 - Styled Components
-- Jest and React Testing Library
-- Prisma and MongoDB (with mocked data)
-- Docker for containerization
-- GitHub Actions for CI
-- Terraform for infrastructure exploration
+- Jest
+- React Testing Library
+- Prisma
+- MongoDB
+- Docker
+- GitHub Actions
+- Terraform
 
-The infrastructure and CI/CD setup were included to align with the exercise requirements and to demonstrate how I would approach real-world deployment scenarios.
+## 📚 Documentation
 
-## 📋 Documentation context
-
-For historical context, the [original README](./docs/README-original.md) written during the interview exercise is preserved in the `docs/` folder.
-
-This repository contains additional documentation created as part of the coding exercise, including:
-
-- [Technical roadmap](./docs/technical-roadmap.md)
-- [Planning notes](./docs/planning.md)
-
-These documents were written to demonstrate reasoning, trade-offs, and planning skills during the interview process.
-
-## 🎯 What I learned
-
-Working on this project helped me consolidate my approach to technical challenges under real-world constraints.
-
-In particular, I learned a lot about:
-
-- Translating open-ended requirements into a structured solution
-- Balancing implementation with documentation
-- Making architectural decisions explicit, even when they are speculative
-- Communicating trade-offs and future possibilities clearly
-
-This project was especially valuable as an exercise in thinking through a system holistically, beyond just writing code.
-
-## 🌟 Current state
-
-- Project status: **finished** 🎉
-- Next steps: no planned next steps.
+- [Requirements](./docs/requirements.md) — original requirements for the coding exercise
+- [Technical roadmap](./docs/technical-roadmap.md) — technical improvements and future possibilities
+- [Planning](./docs/planning.md) — project planning and implementation notes
+- [Original README](./docs/README-original.md) — README created during the original coding exercise
 
 ## 📃 License
 
@@ -88,4 +68,4 @@ This project is licensed under the MIT License. See [LICENSE](./LICENSE) for mor
 
 ---
 
-🌱
+🌱 Crafted by [Fernanda](https://github.com/f-ernanda)
